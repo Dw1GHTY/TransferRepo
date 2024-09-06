@@ -8,7 +8,7 @@ public:
 	Elem* prev;
 	Elem* next;
 
-	Elem(int key) 
+	Elem(int key)
 	{
 		this->prev = nullptr;
 		this->next = nullptr;

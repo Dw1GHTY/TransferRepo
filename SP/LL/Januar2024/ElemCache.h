@@ -2,7 +2,7 @@
 #include "Elem.h";
 
 
-class ElemCache 
+class ElemCache
 {
 public:
 	Elem* head;
@@ -10,7 +10,7 @@ public:
 	static int cntMax;
 	static int count;
 
-	ElemCache(int size) 
+	ElemCache(int size)
 	{
 		this->cntMax = size;
 		this->count = 0;
@@ -18,70 +18,73 @@ public:
 		this->tail = nullptr;
 	}
 
-	void add(Elem* elem) 
+	void add(Elem* elem)
 	{
-		if (count == cntMax) 
+		Elem* p = tail;	//poslednji u listi
+		if (count == cntMax)	//brisanje sa kraja i dodavanje na njega 
 		{
-			Elem* last = tail->prev;
-			elem->prev = last->prev;
-			elem->next = last->next;
-			last->prev->next = elem;	//predzadnji->next = elem
-			last->next->prev = elem;	//tail->prev = elem
-			Delete(last);
+			tail = p->prev;
+			p->prev->next = p->next;
+			
+			//dodavanje novog
+			elem->next = p->next;
+			elem->prev = p->prev;
+			Delete(p);
 		}
 		else 
-		{	
-			//add to tail
-			elem->prev = tail->prev;
-			elem->next = tail;
-			tail->prev->next = elem;
-			tail->prev = elem;
-			count++;
+		{
+			elem->next = p->next;
+			elem->prev = p;
+			p->next = elem;
 		}
 
 	}
 
-	Elem* get(int key) 
+	Elem* get(int key)
 	{
-		Elem* current = head;
-		while (current->next != tail) 
+		Elem* current = head;	//prvi elemnt u listi
+		do//dok nije jednak tail, jer tail ukazuje na poslednji	
 		{
 			if (current->key == key) 
 			{
-				//prelancati na pocetak
-				if (current->prev == head)
+				//el je prvi u list
+				if (head == current)
 					return current;
-				else if (current->next == tail)	//ako je poslednji 
+				//el je poslednji u listi
+				if (tail == current) 
 				{
-					current->prev->next = tail;
-					tail->prev = current->prev;
-					//prelancavanje na pocetak
-					current->next = head->next;
-					current->prev = head;
-					head->next->prev = current;
-					head->next = current;
-					return current; 
+					//spajanje tail sa pretposlednjim
+					current->prev->next = current->next;
+					tail = current->prev;
+					//spajanje pronadjenog el sa head i prvim
+					current->next = head;
+					current->prev = head->prev;
+					head->prev = current;
+					head = current;
 				}
-				else //ako je izmedju dva
+				else //el je izmedju dva el 
 				{
-					//prelancavanje levog i desnog suseda
+					//prelancavanje SUSJEDA
 					current->prev->next = current->next;
 					current->next->prev = current->prev;
-					//prelancavanje na head
-					current->next = head->next;
-					current->prev = head;
-					head->next->prev = current;
-					head->next = current;
-					return current;
+					//prelancavanje na pocetak
+					current->next = head;
+					current->prev = head->prev;
+					head->prev = current;
+					head = current;
 				}
+				
+				return current;	//vraca el
 			}
-			current = current->next;
-		}
-		cout << "Elem sa vrednoscu " << key << "ne postoji u listi";
-		return nullptr;
+			else
+			{
+				cout << "element nije u Cache-u";
+				return nullptr;
+			}
+		} while (current != tail);
 	}
 
-	void Delete(Elem* e) 
+	void Delete(Elem* e)
 	{
 		e->prev = nullptr;
 		e->next = nullptr;

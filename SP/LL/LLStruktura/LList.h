@@ -3,7 +3,7 @@
 class LList
 {
 protected:
-	Node *head, *tail;
+	Node* head;
 public:
 	LList();
 	~LList();
