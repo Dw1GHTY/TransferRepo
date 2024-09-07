@@ -7,11 +7,11 @@ protected:
 	unsigned int count;  //broj elemenata u tablici
 protected:
 	//hash funkcija
-	unsigned int h(char* key);
+	unsigned int h(unsigned int key);
 
-	// primarna  
-	unsigned int f(char * key);
-	// sekundarna 
+	// primarna transformacija 
+	unsigned int f(unsigned int key);
+	// sekundarna transformacija
 	unsigned int g(unsigned int key);
 public:
 	unsigned int getLength() { return m; }

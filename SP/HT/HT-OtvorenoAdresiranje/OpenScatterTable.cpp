@@ -15,10 +15,14 @@ OpenScatterTable::~OpenScatterTable()
 	delete[] array;
 }
 
-unsigned int OpenScatterTable::c(unsigned int i)
+unsigned int OpenScatterTable::c(unsigned int k)
 {
-	//TODO implementirati sekundarnu funkciju
-	return i+5;
+	//sekundarna transformacija c(i):
+	// h(k) = (h(k) + c(i)) mod m, i = 0,1,2...m-1
+	int i = 0;
+	unsigned int hash = h(k);
+
+	return k;
 }
 
 unsigned int OpenScatterTable::findUnoccupied(ScatterObject obj)

@@ -6,18 +6,18 @@ using namespace std;
 class HashObject
 {
 private:
-	char* key;
+	unsigned int key;
 	char* record;
 public:
 	HashObject();
-	HashObject(char* k, char* v);
+	HashObject(unsigned int k, char* v);
 	HashObject(HashObject const& obj);
 	~HashObject();
 	HashObject& operator = (HashObject const& obj);
 	bool operator == (HashObject const& obj);
 	void deleteRecord();
-	char* getKey() { return key; }
+	unsigned int getKey() { return key; }
 	char* getRecord() { return record; }
-	bool isEqualKey(char* k) { return strcmp(key,k)==0; }
+	bool isEqualKey(unsigned int k) { return key == k; }
 	void print();
 };

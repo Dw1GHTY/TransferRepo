@@ -1,22 +1,19 @@
 #include"HashTable.h"
 
-unsigned int HashTable::h(char* key)
+unsigned int HashTable::h(unsigned int key)
 {
-	return g(f(key));
+	return f(key);
 }
 
-unsigned int HashTable::f(char* key)
+//Jun2_2024
+unsigned int HashTable::f(unsigned int key)
 {
-	//TODO:Implementirati funkciju koja prevodi char u unsigned int
-	unsigned int h = 0;
-	for (int i = 0; i < strlen(key); i++)
-		h += key[i]*i*5;
-	return h;
+	return ((key << 4) * 31) % 1000
 }
 
 unsigned int HashTable::g(unsigned int key)
 {
-	//TODO:Implementirati funkciju koja prevodu unsigned int u [0...M-1]	
-	return key%m;
-}
+	
 
+}
+//*************
