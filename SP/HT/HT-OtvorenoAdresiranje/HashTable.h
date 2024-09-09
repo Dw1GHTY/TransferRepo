@@ -1,20 +1,44 @@
 #pragma once
 #include"HashObject.h"
+
+template <class T, class R>
 class HashTable
 {
 protected:
-	unsigned int m; // velicina tablice
-	unsigned int count;  //broj elemenata u tablici
+	unsigned int length; // velicinatablice
+	unsigned int count;  //brojelemenatau tablici
 protected:
-	//hash funkcija
-	unsigned int h(unsigned int key);
-
-	// primarna transformacija 
-	unsigned int f(unsigned int key);
-	// sekundarna transformacija
-	unsigned int g(unsigned int key);
+	unsigned int h(HashObject<T, R> obj) {
+		return (f(obj.getKey()) % length);
+	}
+	// primarnatransformacija
+	virtual unsigned int f(int i) { return abs(i); }
+	virtual unsigned int f(double d) {
+		if (d == 0) return 0;
+		else
+		{
+			int exponent;
+			double mantissa = frexp(d, &exponent);
+			return (unsigned int)((2 * fabs(mantissa) - 1) * ~0U);
+		}
+	}
+	virtual unsigned int f(char* s)
+	{
+		unsigned int res = 0;
+		unsigned int a = 7;
+		for (int i = 0; s[i] != 0; i++)
+			res = res << a ^ s[i];
+		return res;
+	}
+	// sekundarnatransformacija
+	virtual unsigned int g(unsigned int i)
+	{
+		return (i + 1) % length;
+	}
 public:
-	unsigned int getLength() { return m; }
-	
+	unsigned intgetLength() { return length; }
+	virtual double getLoadFactor() {
+		return (double)count / (double)length;
+	}
 };
 
