@@ -1,0 +1,64 @@
+1. Operativni sistemi
+predavanja '99: https://www.youtube.com/watch?v=wNFc-Af01AU&list=PLWLPHZCdUNsMqYukmb3_OVxKc-_OqfaAX
+racunske vezbe '99: https://www.youtube.com/watch?v=wEQf5S5c7Rs&list=PLWLPHZCdUNsOHy8GQCqUNeMPHeAmn9uwn
+racunske vezbe '00: https://www.youtube.com/playlist?list=PLFUwkwonRM-9jjPYHufsXSykY7_Kj59cU
+laboratorijske vezbe '99: https://www.youtube.com/watch?v=nhoqMsvK-UM&list=PLWLPHZCdUNsOqqpTIgkloVXuPODRUEfin
+laboratorijske vezbe '00: https://www.youtube.com/playlist?list=PL22G7CrTbN_DZ7gj7nRjxBW1GTdK46pNO
+
+2. Informacioni sistemi
+predavanja '99: https://www.youtube.com/watch?v=LPAhgKDBzfo&list=PLWLPHZCdUNsPqWR-3B2GlQQz35I7WVBeW
+racunske vezbe '99: https://www.youtube.com/watch?v=4CfRYuYUdSg&list=PLWLPHZCdUNsMfiknkKEqU_RR6dU1EU9kj
+racunske vezbe '00: https://www.youtube.com/playlist?list=PLv3M2rNIbPTbbI2TdDcTqEuDXnKCULVKB
+laboratorijske vezbe '99: https://www.youtube.com/watch?v=uWuuzLxrXas&list=PLWLPHZCdUNsNnAK4acc9K_hH3ygkxUrVS
+
+3. Racunarske mreze
+predavanja '99: https://www.youtube.com/watch?v=-9Dj-9RKiC8&list=PLWLPHZCdUNsOmCR6N-o5jWkLTORVyTFoM
+predavanja '00: https://www.youtube.com/watch?v=oRsDjp_aOtY&list=PLFUwkwonRM-__4YwUGH29oRlvMg1UmQkU&index=1&t=339s
+racunske vezbe '99: https://www.youtube.com/watch?v=04ww6Xb7wdQ&list=PLWLPHZCdUNsMOTu82p5PkMuG2scXkwOOG
+racunske vezbe '00: https://www.youtube.com/watch?v=PFcdOQrTTfc&list=PLFUwkwonRM--Z_jJtGprHrU7XZMbJ7K_X&index=1
+
+4. Web programiranje
+predavanja '99: https://www.youtube.com/watch?v=zvrxem_CMJw&list=PLWLPHZCdUNsNRRj2yuU05ufKgXcL-Tz5u
+predavanja '00: https://www.youtube.com/playlist?list=PLFUwkwonRM--2Fgm_wxN1Ee6_ZIYiQoNc
+racunske vezbe '99: https://www.youtube.com/watch?v=aoGAn0RmGQg&list=PLWLPHZCdUNsMK_fuIcG7cMdfADoIF7TpF
+racunske vezbe '00: https://www.youtube.com/playlist?list=PLFUwkwonRM-8--58T6Br9-4OobKKJ1iBF
+
+5. Engleski jezik 1
+predavanja '99: https://www.youtube.com/watch?v=hHWlyopLRtc&list=PLWLPHZCdUNsN3VrvAyIG0jr7B_jT2JXqv\
+predavanja '00: https://www.youtube.com/playlist?list=PLFUwkwonRM-9JNk4LTrNZyZGq3ifOC5FO
+
+6. Projektovanje i analiza algoritama
+predavanja '00: https://www.youtube.com/playlist?list=PLZCHw0D01t07BT13SKSelPRrWfqNrXowj
+racunske vezbe '00: https://www.youtube.com/playlist?list=PLZCHw0D01t04Gql49CgoXXVfGPz4EzLi3
+
+7. Softversko inzenjerstvo
+predavanja '99: https://www.youtube.com/watch?v=2Jr6jC2h1-U&list=PLWLPHZCdUNsN_Td7_RNb-tZM284wA305U
+predavanja '00: https://www.youtube.com/playlist?list=PLv3M2rNIbPTacuvrv96rxpxom09_1RzHo
+racunske vezbe '99: https://www.youtube.com/watch?v=jFu4deBd8dE&list=PLWLPHZCdUNsNAgXQ-7yGncih2MIuxPQx-
+racunske vezbe '00: https://www.youtube.com/playlist?list=PLv3M2rNIbPTbzcPOzlbBfX0y341vMg90A
+
+8. Paralelni sistemi
+predavanja '99: https://www.youtube.com/watch?v=44yBHDqrA2w&list=PLWLPHZCdUNsPuzw05l1FyGImbnJ-tjN-x
+predavanja '00: https://www.youtube.com/watch?v=R_GsN0GBons&list=PLWLPHZCdUNsMctGLPBz5YleeAGnHTC3D3
+racunske vezbe '99: https://www.youtube.com/watch?v=p2o9KansfTI&list=PLWLPHZCdUNsMNw4XL4yho7CT-byKNWD5l
+racunske vezbe '00: https://www.youtube.com/watch?v=qdhPK9Y78lc&list=PLWLPHZCdUNsPIL5nnEx7qzRfnNzQFz2-C
+
+9. Sistemsko programiranje
+predavanja:
+vezbe:
+
+10. Sistemi baza podataka
+predavanja '99: https://www.youtube.com/watch?v=bmobn4NkuuY&list=PLWLPHZCdUNsOw50ohUCzq6jml_JPjxm6r
+predavanja '00: https://www.youtube.com/watch?v=8bt7f_GPsrw&list=PLv3M2rNIbPTYnVxERYaf8OiBcj9l3tkWz
+racunske vezbe: 
+laboratorijske vezbe '99: https://www.youtube.com/playlist?list=PLWLPHZCdUNsPtwPCrBwzsozmYV8OTqw6z
+
+11. Razvoj web aplikacija
+predavanja '00: https://www.youtube.com/playlist?list=PLyfnKiJ2ShR4OZNvnr2qu7qepwbDnDp-t
+
+12. Engleski jezik 2
+predavanja '99: https://www.youtube.com/watch?v=JPMXi4pHXcA&list=PLWLPHZCdUNsMhETZCGJW4s17-CY8mXfCy
+predavanja '00: https://www.youtube.com/playlist?list=PLv3M2rNIbPTaXLquevMWzDhQ8EQ6SjxAi
+  
+Google drive materijali za RI: https://drive.google.com/drive/u/0/folders/1zZ5jtm-FiUYCrONDLx-KtOAAjmYCJBG3
+Materijali za 6. semestar: https://elfakrs-my.sharepoint.com/:f:/g/personal/djordjevic_nenad_elfak_rs/EsCPyFMy8cJCgfZ9p14Roe0BsE0T2Rf0DUq7YI4J3DHkTQ?e=zEZnb8 
