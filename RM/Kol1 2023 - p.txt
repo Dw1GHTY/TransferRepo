@@ -1,0 +1,76 @@
+Kol 1 2023
+
+Zadatak 1)
+
+DOSTUPNA MREZA -------172.18.48.0/23-------
+
+- Korisnicka podrska (KP):
+90 hostova
+
+90 + adresa mreze + default gateway + broadcast adresa = 93
+Prvi broj koji je stepen 2 i >= od 93 = 128 <=> 2^7.
+
+Uzimamo 7 bitova od hosta za mrezu. 32 - 7 = 25.
+
+Adresa mreze za KP: 172.18.48.0/25
+
+---Default Gateway: 172.18.48.1---
+
+---Hostovi: 172.18.48.2 - 172.18.48.92---
+
+Boradcast adresa zahteva da svi BITOVI koji su za Host-a budu 1.
+
+172.18.48.0
+
+poslednji bajt -> 
+	.0|000 0000 	maska je /25, zato se uzima bit najvece tezine
+	.0|111 1111 -> 64 + 32 + 16 + 8 + 4 + 2 + 1 = 127
+
+---Broadcast adresa: 172.18.48.127---
+
+
+- Informacione Tehnologije (IT):
+
+30 hostova + adresa mreze + default gateway + broadcast adresa = 33
+Prvi broj koji je stepen 2 i >= od 33 = 64 <=> 2^6
+
+Uzimamo 6 bitova od hosta za mrezu. 32 - 6 = 26
+
+Posto je adresa mreze za KP 172.18.48.0|000 0000, sledeci blok je 172.18.48.1|000 0000,
+tj 172.18.48.128, s tim sto je maska /26, pa poslednji bajt kod IT je 172.18.48.10|00 0000.
+
+Adresa mreze za IT ---172.18.48.128/26---
+---Default Gateway: 172.18.48.129---
+---Hostovi: 172.18.48.130 - 172.18.48.163---
+
+Broadcast zahteva da svi bitovi hosta budu na 1.
+
+172.18.48.10|00 0000 -> 10|11 1111
+
+---Broadcast adresa: 172.18.48.191---
+
+
+- Jedna "binarna" mreza izmedju dva rutera
+
+Potrebno je 2 adrese minimalno za povezivanje ova dva rutera, kao dva hosta.
++ 2 adrese za mrezu i broadcast.
+
+Stoga 4 <= 2^2, 32 - 2 = 30 => maska je /30
+
+
+Adresa mreze za IT je 172.18.48.128, poslednji bajt je .10|00 0000
+Sada se prelazi na adresu za ruter 11|00 0000
+Tako da je adresa mreze za ova dva rutera 172.18.48.192/30
+
+---Adresa mreze: ---172.18.48.192/30---
+
+---Hostovi: 172.18.48.193 - 172.18.48.194---
+
+Broadcast je 172.18.48.1100 00|11, tj ---172.18.48.195---
+
+
+
+
+
+
+
