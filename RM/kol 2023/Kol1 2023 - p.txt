@@ -1,7 +1,7 @@
 Kol 1 2023
 
 Zadatak 1)
-
+****************************** POSTUPAK ******************************
 DOSTUPNA MREZA -------172.18.48.0/23-------
 
 - Korisnicka podrska (KP):
@@ -29,7 +29,7 @@ poslednji bajt ->
 ---Broadcast adresa: 172.18.48.127---
 
 
-- Informacione Tehnologije (IT):
+****** Informacione Tehnologije (IT):********
 
 30 hostova + adresa mreze + default gateway + broadcast adresa = 33
 Prvi broj koji je stepen 2 i >= od 33 = 64 <=> 2^6
@@ -67,6 +67,36 @@ Tako da je adresa mreze za ova dva rutera 172.18.48.192/30
 ---Hostovi: 172.18.48.193 - 172.18.48.194---
 
 Broadcast je 172.18.48.1100 00|11, tj ---172.18.48.195---
+
+
+******************************************************************************************
+PODACI ZA CPT:
+
+- Korisnicka podrska:
+AM: 172.18.48.0/25 (255.255.255.128)
+DG: 172.18.48.1
+H:  172.18.48.2 - 172.18.48.92
+BC: 172.18.48.127
+
+- Informacione tehnologije:
+AM: 172.18.48.128/26 (255.255.255.192)
+DG: 172.18.48.129
+H:  172.18.48.130 - 172.18.48.163
+BC: 172.18.48.191
+
+
+- Mreza izmedju rutera
+AM: 172.18.48.192/30 (255.255.255.252)
+H:  172.18.48.193 - 172.18.48.194
+BC: 172.18.48.195
+******************************************************************************************
+
+
+
+
+
+
+
 
 
 
