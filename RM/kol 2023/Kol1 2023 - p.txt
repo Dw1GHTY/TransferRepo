@@ -18,7 +18,7 @@ Adresa mreze za KP: 172.18.48.0/25
 
 ---Hostovi: 172.18.48.2 - 172.18.48.92---
 
-Boradcast adresa zahteva da svi BITOVI koji su za Host-a budu 1.
+Broadcast adresa zahteva da svi BITOVI koji su za Host-a budu 1.
 
 172.18.48.0
 
