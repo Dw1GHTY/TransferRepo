@@ -1,0 +1,1 @@
+c:\www\bin\tiny.exe c:\www\root 8000
