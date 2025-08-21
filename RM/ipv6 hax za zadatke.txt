@@ -1,0 +1,42 @@
+Po onome sto se trazi u zadacima:
+
+********** 1) Raspodela date ipv6 adrese na LAN i p2p mreze. **********
+
+- koja god adresa da se zada, maska nece preci > /64,
+- tako da uvek ide xxxx:xxxx:xxxx:<inkrementiraj masku po mrezi>
+
+********** 2) Rutiranje (uglavnom za jedan ruter se trazi) **********
+!!! UVEK MORA DA SE URADI: R(config)# ipv6 unicast-routing !!! komanda
+	
+- STATICKO -> skoro isto kao kod ipv4:
+ipv6 route <adresa_mreze_koja_se_dodaje> <next_hop_adresa(ugl interfejs susednog rutera)
+
+- DINAMICKO -> samo RIP protokol ce da se trazi:
+(konfiguracioni mod): ipv6 router rip <proizvoljni_naziv>
+(konfiguracija interfejsa): ipv6 rip <proizvoljni_naziv> enable
+	
+********** 3) KONFIGURACIJA HOSTOVA IPv6 **********
+
+- trazice se dinamicka konfiguracija i da se znaju:
+	- RA i RS konfiguracione poruke
+	- A, O i M flegovi koji diktiraju da li ce hostovi ipv6 konfiguracije uzimati
+	- SLAAC, SLAAC+DHCPv6 ili DHCPv6 respektivno
+
+	- komande za konfiguraciju flagova:
+		A (SLAAC) -> (interfejs) ipv6 nd prefix prefix/prefix_length no-autoconfig
+		O (SLAAC+DHCPv6) -> (interfejs) ipv6 nd other-config-flag
+		M (DHCPv6) -> (interfejs) ipv6 nd managed-config-flag
+
+- ako trazi formiranje IPv6 adrese jednog host-a cija je MAC adresa data (bice SLAAC),
+onda objasnis da se EUI-64 procesom dobija IPv6 adresa od MAC adrese
+
+-ukratko kako EUI-64 proces izgleda:
+	- Imas prefiks npr 2001:dbc:cafe:1::/64
+	- MAC adresa je 48-bit i ima 6 dupleta (2 hexa cifre, tj 8 bit-a)
+	- U sredini, izmedju 3. i 4. dupleta se dodaje FF FE, tj dva dupleta
+	- Invertuje se 7. bit od prva dva dupleta
+	- spoji se sa prefiksom
+
+!! IZ OVOG RAZLOGA SLAAC NE FUNKCIONISE AKO JE "maska" veca od 64, tj deo za mrezu vise od 64 bita
+
+
