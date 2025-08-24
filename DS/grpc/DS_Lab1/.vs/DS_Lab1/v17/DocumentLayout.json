@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\DS_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F67FA255-48D2-4468-86A5-8CAF86A5B5C1}|DS_Lab1.csproj|c:\\users\\marko\\desktop\\transferrepo\\ds\\ds_lab1\\protos\\service.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F67FA255-48D2-4468-86A5-8CAF86A5B5C1}|DS_Lab1.csproj|solutionrelative:protos\\service.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "service.proto",
+              "DocumentMoniker": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\DS_Lab1\\Protos\\service.proto",
+              "RelativeDocumentMoniker": "Protos\\service.proto",
+              "ToolTip": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\DS_Lab1\\Protos\\service.proto",
+              "RelativeToolTip": "Protos\\service.proto",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-09-14T08:12:25.089Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
