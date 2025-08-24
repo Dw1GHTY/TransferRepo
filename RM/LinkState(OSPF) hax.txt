@@ -1,0 +1,18 @@
+- Prvo izlistaj sve jedinstvene MREZE i RUTERE
+- MREZE i RUTERI su CVOROVI grafa
+- POLAZNI ruter koji je dat u zadatku ima cenu (-, 0) 
+
+Kako ide algoritam:
+
+- Imas cvor od koga kreces.
+- Izracunas cenu za sve cvorove SUSEDNE polaznom (upamti da su i mreze cvorovi)
+- Posle toga ide LOOP dok se ne obrade svi cvorovi, tako da:
+	- sledeci cvor koji se obradjuje je onaj sa najmanjom cenom (od polaznog)
+		//ako ima vise njih biraj bilo koj
+	- za cvor koji se trenutno obradjuje se racuna cena od njega
+	  do svih njegovih suseda
+	- kada se to uradi, gleda se, od svih neobradjenih cvorova kojima je doeljena cena (napisano iznad njih)
+	  koji ima najmanju
+	- ukoliko se od trenutnog izracuna cena za neki koji vec ima, uzmes manju i ona je sada aktuelna
+	- tako do kraja
+- kraj loop-a

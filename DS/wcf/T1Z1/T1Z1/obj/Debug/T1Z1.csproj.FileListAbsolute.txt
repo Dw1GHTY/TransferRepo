@@ -1,0 +1,7 @@
+D:\Velja\DS\WCF\T1Z1\T1Z1\bin\T1Z1.dll.config
+D:\Velja\DS\WCF\T1Z1\T1Z1\bin\T1Z1.dll
+D:\Velja\DS\WCF\T1Z1\T1Z1\bin\T1Z1.pdb
+D:\Velja\DS\WCF\T1Z1\T1Z1\obj\Debug\T1Z1.csproj.AssemblyReference.cache
+D:\Velja\DS\WCF\T1Z1\T1Z1\obj\Debug\T1Z1.csproj.CoreCompileInputs.cache
+D:\Velja\DS\WCF\T1Z1\T1Z1\obj\Debug\T1Z1.dll
+D:\Velja\DS\WCF\T1Z1\T1Z1\obj\Debug\T1Z1.pdb
