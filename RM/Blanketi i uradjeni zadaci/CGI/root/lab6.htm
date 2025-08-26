@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matematičke Operacije</title>
+</head>
+<body>
+    <h1>Unesite dva broja i odaberite operaciju</h1>
+    <form action="/cgi-bin/lab6.exe" method="GET">
+        <label for="number1">Broj 1:</label>
+        <input type="number" id="number1" name="number1" required><br><br>
+
+        <label for="number2">Broj 2:</label>
+        <input type="number" id="number2" name="number2" required><br><br>
+
+        <input type="radio" id="saberi" name="operation" value="saberi" checked>
+        <label for="saberi">+</label><br>
+
+        <input type="radio" id="oduzmi" name="operation" value="oduzmi">
+        <label for="oduzmi">-</label><br>
+
+        <input type="radio" id="pomnozi" name="operation" value="pomnozi">
+        <label for="pomnozi">*</label><br><br>
+
+        <input type="submit" value="Izračunaj">
+    </form>
+</body>
+</html>

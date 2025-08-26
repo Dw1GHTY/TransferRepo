@@ -1,0 +1,7 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  2020_kolokvijum2.cpp
+C:\Users\tasko\Desktop\FAX\V\5 Semestar\Mreze\II kolokvijum\2020_kolokvijum2\2020_kolokvijum2\2020_kolokvijum2.cpp(11,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tasko\Desktop\FAX\V\5 Semestar\Mreze\II kolokvijum\2020_kolokvijum2\2020_kolokvijum2\2020_kolokvijum2.cpp(12,14): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tasko\Desktop\FAX\V\5 Semestar\Mreze\II kolokvijum\2020_kolokvijum2\2020_kolokvijum2\2020_kolokvijum2.cpp(15,18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\tasko\Desktop\FAX\V\5 Semestar\Mreze\II kolokvijum\2020_kolokvijum2\2020_kolokvijum2\2020_kolokvijum2.cpp(31,18): warning C4244: 'initializing': conversion from 'std::streamoff' to 'int', possible loss of data
+  2020_kolokvijum2.vcxproj -> C:\www\root\cgi-bin\2020_kolokvijum2.exe

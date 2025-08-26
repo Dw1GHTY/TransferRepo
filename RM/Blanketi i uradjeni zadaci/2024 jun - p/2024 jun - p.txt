@@ -1,0 +1,138 @@
+**************** ZADATAK 1 ****************
+a)
+IPv4 - dat je opseg adresa 192.168.6.0/24
+
+- Sa slike se vidi da ima 5 mreza. Lokalna mreza sa 2 swtich-a koja je povezana na 2 rutera 
+se racuna kao jedna mreza.
+
+- Idemo na raspodelu
+
++++++++ MREZA 1 (kod servera S1) +++++++
+60 + S1 + BC + DG + AM = 64
+2^6 = 64 >= 64 => maska je /26
+
+AM:
+	192.168.6.0/26
+DG:
+	192.168.6.1/26
+H:
+	192.168.6.2 - 192.168.6.126/26
+BC (bitovi hosta su 1):
+	192.168.6.01|11 1111 => 192.168.6.127/26
+
+
++++++++ MREZA 2 (R1 int f0/3) +++++++
+50 + DG + BC + AM = 53
+2^6 = 64 >= 53 => maska je /26
+
+AM od MREZA 1 => 192.168.6.01|00 0000
+maska je ista pa je sledeci blok => 192.168.6.10|00 0000
+=> 192.168.6.128/26
+
+AM:
+	192.168.6.128/26
+DG:
+	192.168.6.129/26
+H:
+	192.168.6.130 - 192.168.6.190/26
+B (bitovi hosta su 1):
+	192.168.6.10|11 1111 => 192.168.6.191/26
+
+
++++++++ MREZA 3 (dual switch/router mreza) +++++++
+30 + 2R + BC + AM = 34
+2^6 = 64 >= 34 => maska je opet /26
+
+AM od MREZA 2 je 192.168.6.10|00 0000
+maska je ista, sledeci blok je => 192.168.6.11|00 0000
+
+AM:
+	192.168.6.192/26
+R1:
+	192.168.6.193/26
+R2:
+	192.168.6.194/26
+H:
+	192.168.6.195 - 192.168.6.254/26
+B (bitovi hosta na 1):
+	192.168.6.11|11 1111 => 192.168.6.255/26
+
+
+
+
+- OSTALE SU 2 SERIJSKE MREZE IZMEDJU R1-R2 i R2-R3
+
+potrebne su samo dve adrese iz opsega
+2 host-a, maska /30
+
+
+OBE MREZE SU ISCEPANE IZ PRVOG BLOKA MREZE 1,
+ispravka se pravi kod MREZA 1 gde se posle hostova odmah skine malo
+
++++++++ Mreža R1–R2 +++++++
+
+192.168.6.64/30
+
+R1: 192.168.6.65
+
+R2: 192.168.6.66
+
+Broadcast: 192.168.6.67
+
++++++++ Mreža R2–R3 +++++++
+
+192.168.6.68/30
+
+R2: 192.168.6.69
+
+R3: 192.168.6.70
+
+Broadcast: 192.168.6.71
+
+
+
+
+******** IPv6 raspodela: ********
+
+
+data adresa: 2001:DB8:ACAD::/56
+
+dovoljno je koristiti /64 za sve adrese
+
++++++ Mreza R1-R2 +++++
+AM: 2001:DB8:ACAD:1::/64
+R1 s0/0/3 2001:DB8:ACAD:1::1/64
+R2 s0/0/2 2001:DB8:ACAD:1::2/64
+
++++++ Mreza R2-R3 +++++
+AM: 2001:DB8:ACAD:2::/64
+R2 s0/0/1 2001:DB8:ACAD:2::1/64
+R3 s0/0/0 2001:DB8:ACAD:2::2/64
+
++++++ Mreza kod S1 +++++
+AM: 2001:DB8:ACAD:3::/64
+R1 f0/4 2001:DB8:ACAD:3::1/64
+
+
+++++++ Mreza gore levo ++++++
+AM: 2001:DB8:ACAD:4::/64
+R1 f0/3 2001:DB8:ACAD:4::1/64
+
+
++++++ "Dualna" mreza ++++++
+AM: 2001:DB8:ACAD:5::/64
+R1 f0/2 2001:DB8:ACAD:5::1/64
+R2 f0/1 2001:DB8:ACAD:5::2/64
+
+
+
+
+
+ 
+
+
+
+
+
+
+

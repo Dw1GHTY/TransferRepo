@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Računarska Konfiguracija</title>
+</head>
+<body>
+    <h1>Sastavite računarsku konfiguraciju</h1>
+    <form action="/cgi-bin/lab6zadatak7.exe" method="GET">
+        <label for="processor">Procesor:</label>
+        <select id="processor" name="processor">
+            <option value="100">Procesor A - 100$</option>
+            <option value="150">Procesor B - 150$</option>
+            <option value="200">Procesor C - 200$</option>
+        </select><br><br>
+
+        <label for="motherboard">Ploča:</label>
+        <select id="motherboard" name="motherboard">
+            <option value="70">Ploča X - 70$</option>
+            <option value="120">Ploča Y - 120$</option>
+            <option value="180">Ploča Z - 180$</option>
+        </select><br><br>
+
+        <input type="submit" value="Izračunaj ukupnu cenu">
+    </form>
+</body>
+</html>
