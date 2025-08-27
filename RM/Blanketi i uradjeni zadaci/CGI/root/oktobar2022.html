@@ -1,23 +1,33 @@
-<html> 
-<head> <title>Oktobar 2022</title> </head>
-<body> <h1>Zadatak 3</h1>
+<html>
+  <head>
+    <title>Oktobar 2022</title>
+  </head>
+  <body>
+    <h1>Zadatak 3</h1>
 
-<form action="naruci.cgi" method=get>
-<p>Sta generise ova forma?
-<p>Izaberite boju majice:
-<p><select name="boja" size="3d" multiple>
-<option>Bela
-<option>Crna 
-<option>Crvena
-</select><p>
-<p>Veličina:
-<br> <input type=radio name="vel" value="m">XL
-<br> <input type=radio name="vel" value="l" checked>L 
-<br> <input type=radio name="vel" value="m">M 
-<br> <input type=radio name="vel" value="s">S
-<p>Količina:
-<p> <input type="text" name="kolicina" value="1"> <p> <input type=submit value="Submit order"> 
-</form>
- 
-</body>
- </html>
+    <form action="naruci.cgi" method="get">
+      <p>Sta generise ova forma?</p>
+      <p>Izaberite boju majice:</p>
+      <p>
+        <select name="boja" size="3d" multiple>
+          <option>Bela</option>
+          <option>Crna</option>
+          <option>Crvena</option>
+        </select>
+      </p>
+
+      <p></p>
+      <p>
+        Veličina: <br />
+        <input type="radio" name="vel" value="m" />XL <br />
+        <input type="radio" name="vel" value="l" checked />L <br />
+        <input type="radio" name="vel" value="m" />M <br />
+        <input type="radio" name="vel" value="s" />S
+      </p>
+
+      <p>Količina:</p>
+      <p><input type="text" name="kolicina" value="1" /></p>
+      <p><input type="submit" value="Submit order" /></p>
+    </form>
+  </body>
+</html>

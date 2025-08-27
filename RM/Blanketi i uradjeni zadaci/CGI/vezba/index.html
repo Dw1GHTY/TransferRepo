@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proba</title>
+  </head>
+  <body>
+    <form>
+      <!-- zahtev: http://127.0.0.1:5501/vezba/index.html?x=44&y=81 -->
+      <input type="image" src="../images/tackice.png" />
+      <!-- zahtev: http://127.0.0.1:5501/vezba/index.html?broj=2-->
+      <select name="broj">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <input type="submit" />
+      <map name="image-map">
+        <area
+          shape="rect"
+          coords="0,0,100,200"
+          href="/cgi-bin/lab6zad3.exe?color=red"
+          alt="Crveno"
+        />
+        <area
+          shape="rect"
+          coords="100,0,200,200"
+          href="/cgi-bin/lab6zad3.exe?color=yellow"
+          alt="Žuto"
+        />
+      </map>
+      <img
+        src="/images/slika1.png"
+        usemap="#image-map"
+        alt="Slika sa klikabilnim oblastima"
+      />
+    </form>
+  </body>
+</html>

@@ -1,29 +1,30 @@
-
-<html> 
-<head>
-<title>Računarske mreže</title>
-</head>
-<body>
-<h1>Računarske mreže - Januar 2022</h1>
-<h3> <p>Informacije o studentu:</p> </h3> 
-<form action="/cgi-bin/student.cgi" method="GET">
-<p>Ime:</p>
-<p><input type="text" name="ime"></p> 
-<p>Prezime:</p>
-<p> <input type="text" name="prezime"></p> 
-<p>Pol:</p>
-<select name="pol" size="1">
-<option>Ž</option>
-<option>M</option>
-</select>
-<p>Broj indeksa:</p>
-<p><input type="text" name="indeks"></p>
-<p>Godina studija:</p>
-<p> <input type="radio" name="god" value=1>1 
-<input type="radio" name="god" value=2>2 
-<input type="radio" name="god" value=3>3 
-<input type="radio" name="god" value=4>4 </p>
-<input type="submit" value=Prijava>
-</form>
-</body>
+<html>
+  <head>
+    <title>Računarske mreže</title>
+  </head>
+  <body>
+    <h1>Računarske mreže - Januar 2022</h1>
+    <h3><p>Informacije o studentu:</p></h3>
+    <form action="/cgi-bin/student.cgi" method="GET">
+      <p>Ime:</p>
+      <p><input type="text" name="ime" /></p>
+      <p>Prezime:</p>
+      <p><input type="text" name="prezime" /></p>
+      <p>Pol:</p>
+      <select name="pol" size="1">
+        <option>Ž</option>
+        <option>M</option>
+      </select>
+      <p>Broj indeksa:</p>
+      <p><input type="text" name="indeks" /></p>
+      <p>Godina studija:</p>
+      <p>
+        <input type="radio" name="god" value="1" />1
+        <input type="radio" name="god" value="2" />2
+        <input type="radio" name="god" value="3" />3
+        <input type="radio" name="god" value="4" />4
+      </p>
+      <input type="submit" value="Prijava" />
+    </form>
+  </body>
 </html>
