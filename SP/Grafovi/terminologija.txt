@@ -1,0 +1,80 @@
+zavrsni cvorovi potega -> cvorovi V i U koje povezuje poteg e
+
+incidentnost
+	potega i cvora: poteg e je incidentan cvoru V akko je V zavrsni cvor potega e
+	cvora i potega: cvor V je incidentan potegu e akko je V sastavni deo uredjenog para potega e
+
+susedni cvorovi
+	cvorovi V i U su susedni akko su sastavni deo uredjenog para potega e = (V, U)
+
+stepen cvora
+	stepen cvora V je broj potega e kojima je cvor V incidentan	
+
+izolovan cvor
+	cvor stepena 0	
+
+orijentisani graf
+	graf G je orijentisan ako svaki poteg ima cvor iz koga izlazi(izvire) i cvor u koji ulazi(uvire)
+
+paralelni potezi
+	potezi e i x su paralelni ako imaju isti uredjeni par cvorova V i U
+
+petlja
+	izvire i uvire u isti cvor V / poteg e ciji je uredjeni par cvor V tako da e = (V, V) je petlja
+
+put (duzine n)
+	put je skup cvorova i potega tako da pocinje cvorom i zavrsava se cvorom.
+	put duzine n je put koji pocetni  izavrsni cvor, ima n+1 cvorova pri cemu su Vi i Vi+1 susedni cvorovi.
+
+prost put
+	put kod koga su svi cvorovi i potezi razliciti
+
+zatvoreni put
+	zapravo KRUZNI put kod koga je isti cvor pocetni i zavrsni (V0 = Vn)	
+
+ciklus
+	put koji pocinje od cvora u kome se zavrsava	|	ciklus duzine 1 je petlja
+
+prost ciklus
+	ciklus kod kog su svi cvorovi i potezi razliciti
+
+povezani graf
+	akko postoji PROST PUT izmedju bilo koja dva njegova cvora
+
+strogo povezani grafk
+	akko postoji samo jedan PUT iz svakog cvora do svih ostalih cvorova
+
+
+
+*****************************REPREZENTACIJA GRAFA*****************************
+Matrica susedstva
+	n -> broj cvorova
+	Matrica nxn
+	1 -> cvorovi su susedni (spaja ih poteg)
+	0 -> nisu susedni
+	simetricna u ondosu na glavnu dijagonalu (neorijentisan)
+	kod orijentisanog je 1 gde izvire -> uvire
+	kod neorijentisanog svuda 1 gde je spojeno
+
+
+Matrica tezine
+	Matrica susedstva kod koje vrednost elementa nije 1 nego tezina potega
+	gde nisu susedni ide 0 ili beskonacno u zavisnosti od implementacije	
+
+Matrica incidencije
+	zasniva se na invidentnosti cvora i potega
+	n -> broj cvorova
+	m -> broj potega
+	Matrica nxm
+	kod orijentisanog ako poteg izvire -1 ako uvire +1
+	kod neorijentisanog 1
+	za petlju se pise 2	
+
+
+
+
+
+
+
+
+
