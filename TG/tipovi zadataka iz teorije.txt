@@ -1,0 +1,2 @@
+1) Da li je niz grafovski
+2) Da li su grafovi izomorfni
