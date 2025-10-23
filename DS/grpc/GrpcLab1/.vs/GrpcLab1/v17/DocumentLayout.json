@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\marko\\desktop\\transferrepo\\ds\\grpc\\grpclab1\\klijent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|solutionrelative:klijent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\marko\\desktop\\transferrepo\\ds\\grpc\\grpclab1\\klijent\\klijent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|solutionrelative:klijent\\klijent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Program.cs",
+              "RelativeDocumentMoniker": "Klijent\\Program.cs",
+              "ToolTip": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Program.cs",
+              "RelativeToolTip": "Klijent\\Program.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAqwLkAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T18:27:02.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Klijent",
+              "DocumentMoniker": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
+              "RelativeDocumentMoniker": "Klijent\\Klijent.csproj",
+              "ToolTip": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
+              "RelativeToolTip": "Klijent\\Klijent.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T18:26:46.535Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

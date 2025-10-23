@@ -1,0 +1,6 @@
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.AssemblyInfoInputs.cache
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.AssemblyInfo.cs
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.csproj.CoreCompileInputs.cache
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.sourcelink.json
+C:\Users\marko\Desktop\TransferRepo\DS\grpc\GrpcLab1\Klijent\obj\Debug\net6.0\Klijent.csproj.AssemblyReference.cache

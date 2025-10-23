@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "KorisnikServisGrpc";
+
+package korisnikservis;
+
+
+service KorisnikServis {
+	rpc CreateKorisnik(Korisnik) returns (Korisnik);
+	rpc DeleteKorisnik(Id) returns (Korisnik);
+	rpc UpdateKorisnik(Korisnik) returns (Korisnik);
+	rpc GetKorisnik(Id) returns (Korisnik);
+	rpc GetKorisniciFromTo(FromTo) returns (stream Korisnik);
+	rpc DeleteKorisnici(stream Id) returns (stream Korisnik);
+}
+
+message Korisnik {
+	int32 id = 1;
+	string ime = 2;
+	string prezime = 3;
+	string adresa = 4;
+	string brojeviTelefona = 5;
+}
+
+message Id {
+	int32 id = 1;
+}
+
+message FromTo {
+	int32 from = 1;
+	int32 to = 2;
+}
