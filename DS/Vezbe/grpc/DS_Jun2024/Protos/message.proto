@@ -1,0 +1,20 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "MessageNamespace";
+
+service ServiceMessages{
+	rpc SendMessage(Poruka) returns (google.protobuf.Empty);
+	rpc DeleteMessage(Identifikator) returns (google.protobuf.Empty);
+	rpc ListMessages(google.protobuf.Empty) returns (stream Poruka);
+}
+
+message Poruka{
+	Identifikator porukaId = 1;
+	 string tekst = 2;
+}
+
+message Identifikator{
+	 int32 id = 1;
+}
+

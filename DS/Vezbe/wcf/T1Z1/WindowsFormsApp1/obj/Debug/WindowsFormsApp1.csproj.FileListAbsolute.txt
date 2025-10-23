@@ -1,0 +1,10 @@
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\Velja\DS\WCF\T1Z1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

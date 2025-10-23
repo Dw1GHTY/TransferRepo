@@ -1,0 +1,7 @@
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\bin\WcfServiceSokovi.dll.config
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\bin\WcfServiceSokovi.dll
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\bin\WcfServiceSokovi.pdb
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\obj\Debug\WcfServiceSokovi.csproj.AssemblyReference.cache
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\obj\Debug\WcfServiceSokovi.csproj.CoreCompileInputs.cache
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\obj\Debug\WcfServiceSokovi.dll
+D:\Velja\DS\WCF\WcfServiceSokovi\WcfServiceSokovi\obj\Debug\WcfServiceSokovi.pdb
