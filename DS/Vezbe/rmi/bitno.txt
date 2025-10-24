@@ -1,0 +1,14 @@
+Sta je bitno kod RMI:
+
+- Interfejsi implementiraju Remote i sve metode su public
+
+- Klase kao implementacije interfejsa extenduju UnicastRemoteObject i implementiraju interfejs i metode
+
+- Server kreira registry, Naming.rebind("rmi://localhost:1099/naziv_remote_klase", promenljiva)
+
+- Klijent sadrzi sve interfejse koje ima klasa, 
+a registar cita promenljiva koja je tipa interfejsa koji implementira remote klasa
+i cita registar sa Naming.lookup("rmi://localhost:1099/naziv_remote_klase")
+
+- Serializable je interfejs koji se samo nasledjuje i nema metode. Klase koje su serializable
+se serializuju u bajtove i deserijalizuju na serveru

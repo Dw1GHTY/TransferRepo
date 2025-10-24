@@ -1,7 +1,0 @@
-D:\Velja\DS\WCF\T2CB\T2CB\bin\T2CB.dll.config
-D:\Velja\DS\WCF\T2CB\T2CB\bin\T2CB.dll
-D:\Velja\DS\WCF\T2CB\T2CB\bin\T2CB.pdb
-D:\Velja\DS\WCF\T2CB\T2CB\obj\Debug\T2CB.csproj.AssemblyReference.cache
-D:\Velja\DS\WCF\T2CB\T2CB\obj\Debug\T2CB.csproj.CoreCompileInputs.cache
-D:\Velja\DS\WCF\T2CB\T2CB\obj\Debug\T2CB.dll
-D:\Velja\DS\WCF\T2CB\T2CB\obj\Debug\T2CB.pdb

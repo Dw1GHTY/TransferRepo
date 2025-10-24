@@ -1,7 +1,0 @@
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\bin\Debug\ConsoleSokovi.exe.config
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\bin\Debug\ConsoleSokovi.exe
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\bin\Debug\ConsoleSokovi.pdb
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\obj\Debug\ConsoleSokovi.csproj.AssemblyReference.cache
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\obj\Debug\ConsoleSokovi.csproj.CoreCompileInputs.cache
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\obj\Debug\ConsoleSokovi.exe
-D:\Velja\DS\WCF\WcfServiceSokovi\ConsoleSokovi\obj\Debug\ConsoleSokovi.pdb
