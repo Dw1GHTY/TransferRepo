@@ -10,5 +10,28 @@ Sta je bitno kod RMI:
 a registar cita promenljiva koja je tipa interfejsa koji implementira remote klasa
 i cita registar sa Naming.lookup("rmi://localhost:1099/naziv_remote_klase")
 
-- Serializable je interfejs koji se samo nasledjuje i nema metode. Klase koje su serializable
-se serializuju u bajtove i deserijalizuju na serveru
+- Serializable je interfejs koji se samo implementira i nema metode. Klase koje su serializable
+se serializuju u bajtove i deserijalizuju na serveru.
+Serializable se koristi iskljucivo ako postoji data transfer izmedju Klijenta i Server, zato sto
+je mreza cesto nepouzdana
+
+- Kriterijumi na osnovu kojih se odlucuje da li je klasa Serializable ili UnicastRemoteObject:
+1) Ako klasa nema metode vec igra ulogu neke strukture podatka
+2) Da li ce atributi klase da se menjaju? Ako ne bice Serializable ako da nece biti serializable
+3) Ako se stanje nekog objekta menja postaje Remote object (UnicastRemoteObject), tj ako Klijent
+uzrokuje promenu stanja onda je UnicastRemoteObject
+4) Ako je parametar neke metode Remote objekta isto klasa, ta klasa je Serializable
+5) Klasa koja je u rmi registry je UnicastRemoteObject
+
+- Remote (UnicastRemoteObject) objekat se vraca po referenci
+
+- Callback -> kada server treba da obavesti klijenta/e o nekom dogadjaju, u prevodu
+callback je remote objekat koji server poziva na klijentu
+- Implementirati ICallback unutar klase Klijenta
+!!!Obrati paznju da li se trazi da obavesti jednog ili sve klijente!!!:
+    - ako je jedan onda jedan callback
+    - ako je vise onda lista callbackova sa register i unregister metodama
+    u remote objektu na serveru
+
+
+2205
