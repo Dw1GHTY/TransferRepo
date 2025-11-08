@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Lab1Proto";
+
+
+service Lab1Service {
+
+	rpc AddToAccumulator(Number) returns (google.protobuf.empty);
+	rpc AlterAccumulator(stream Number) returns (stream Number);
+}
+
+message Number {
+	int32 num = 1;
+}

@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "Okt2Proto";
+
+
+service Okt2Service {
+
+	rpc IsSquare (stream Numbers) returns (stream ResponseMessage);
+}
+
+
+message ResponseMessage {
+	string message = 1;
+}
+
+message Numbers {
+	int32 a = 1;
+	int32 b = 2;
+}

@@ -3,8 +3,8 @@ MQTT broker je server koji razmenjuje poruke izmedu klijenata korišćenjem topi
 Topic predstavlja string na osnovu koga se poruke (definisane naslovom i sadržajem) 
 filtriraju i dostavljaju odredenim klijentima. 
 Neophodno je implementirati metodu subscribe kako bi se klijent pretplatio na poruke
-pristigle na odredeni topik, kao i metodu publish 
-koja omogućava korisniku da pošalje poruku na željeni topik. 
+pristigle na odredeni topik, 
+kao i metodu publish koja omogućava korisniku da pošalje poruku na željeni topik. 
 Klijent ne kreira Topic eksplicitno, već se Topic,
 ukoliko ne postoji, kreira implicitno pozivom metode createTopic. 
 Napisati serversku aplikacijjavau za hostovanje MQTT brokera i registrovati ga u RMI registar,

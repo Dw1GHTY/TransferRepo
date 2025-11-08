@@ -1,0 +1,93 @@
+1. Atributi, interfejs, servis
+
+Interfejs sa [ServiceContract] se izlaže spolja
+
+[OperationContract]
+Ovim obeležavaš metodu koja je dostupna spolja (klijent može da je pozove).
+Opcioni parametri:
+
+IsOneWay = true → metoda ne vraća rezultat, nema ni fault ni return value, i klijent ne čeka odgovor.
+
+Koristi se za fire-and-forget komunikaciju, npr. slanje poruke u chat-u gde te ne zanima rezultat.
+
+IsOneWay = false → default; metoda može vraćati vrednost i/ili podizati grešku (FaultContract).
+
+
+[DataContract] i [DataMember]
+Koriste se za tipove podataka koje servis razmenjuje (DTOs).
+
+[DataContract] se stavlja na klasu koja se serijalizuje.
+[DataMember] se stavlja na svaku osobinu koju želiš da se serijalizuje.
+
+[ServiceBehavior]
+Ovim obeležavaš implementacionu klasu (servis), i podešavaš životni ciklus i ponašanje instance:
+
+- InstanceContextMode:
+
+	PerCall – nova instanca za svaki poziv (najčešće).
+
+	PerSession – ista instanca za jednog klijenta (bitno kad imaš session state).
+
+	Single – jedna instanca za sve klijente (singleton).
+
+- ConcurrencyMode:
+
+	Single – jedan thread u datom trenutku.
+
+	Multiple – paralelni pristup moguć.
+
+	Reentrant – omogućava rekurzivne pozive uz callback.
+
+Kod chat aplikacija sa callback-om često koristiš PerSession + Reentrant
+
+
+
+2. Binding-i i konfiguracija:
+
+
+basicHttpBinding - Za interoperabilnost (npr. komunikacija sa Java/legacy sistemima).
+
+wsHttpBinding - SOAP 1.2 + WS-* standardi (sigurnost, pouzdanost, transakcije). Kada želiš sigurnu, enterprise komunikaciju.
+
+wsDualHttpBinding - Kao wsHttpBinding, ali omogućava dvosmernu komunikaciju (callback). Kada servis treba da pozove klijenta nazad (npr. 			chat, notifikacije).
+ 
+
+
+
+3. Callback:
+
+- Na strani servisa (Servera) se definise callback interfejs:
+
+public interface IChatCallback
+{
+    [OperationContract(IsOneWay = true)]
+    void ReceiveMessage(string from, string message, DateTime sentAt);
+}
+
+
+- Na interfejs servisa se stavi atribut koji oznacava da ovaj servis ima callback:
+
+[ServiceContract(CallbackContract = typeof(IChatCallback))]
+public interface IChatService
+{
+    [OperationContract(IsOneWay = true)]
+    void SendMessage(string to, string message);
+}
+
+- U implementacji servisa se koristi ICallback interfejs
+
+- Na strani klijenta se implementira ICallback interfejs
+
+
+
+4. Povezivanje klijenta i servera:
+
+var callbackInstance = new InstanceContext(new ChatClientCallback());
+var factory = new DuplexChannelFactory<IChatService>(callbackInstance, "ChatEndpoint");
+IChatService proxy = factory.CreateChannel();
+
+
+
+
+
+

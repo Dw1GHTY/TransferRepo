@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "FibonacciProtoNamespace";
+
+service FibonacciService {
+	rpc GetFibonacciSequence(Number) returns (stream Number);
+}
+
+
+message Number {
+	int32 n = 1;
+}

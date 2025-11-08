@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\Lab1\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E21ABCC6-CAFF-4517-962A-E1355310685C}|..\\Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\lab1\\client\\protos\\lab1.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{993BBC2B-C8BC-4F6E-8B45-AE41B0895719}|Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\lab1\\server\\protos\\lab1.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{993BBC2B-C8BC-4F6E-8B45-AE41B0895719}|Server.csproj|solutionrelative:protos\\lab1.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "lab1.proto",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\Lab1\\Client\\Protos\\lab1.proto",
+              "RelativeDocumentMoniker": "..\\Client\\Protos\\lab1.proto",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\Lab1\\Client\\Protos\\lab1.proto",
+              "RelativeToolTip": "..\\Client\\Protos\\lab1.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-10-30T16:36:39.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "lab1.proto",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\Lab1\\Server\\Protos\\lab1.proto",
+              "RelativeDocumentMoniker": "Protos\\lab1.proto",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\Lab1\\Server\\Protos\\lab1.proto",
+              "RelativeToolTip": "Protos\\lab1.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-10-30T16:33:29.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

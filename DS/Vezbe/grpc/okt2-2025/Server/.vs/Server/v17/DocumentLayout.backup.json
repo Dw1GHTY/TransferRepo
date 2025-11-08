@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{19904305-0AC3-4B55-8647-FB8A6D13D383}|..\\Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\okt2-2025\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19904305-0AC3-4B55-8647-FB8A6D13D383}|..\\Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\okt2-2025\\client\\client.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1C59AB8-F206-4B41-85D1-C062D117B0DC}|Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\okt2-2025\\server\\services\\okt2service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1C59AB8-F206-4B41-85D1-C062D117B0DC}|Server.csproj|solutionrelative:services\\okt2service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Client\\Program.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Client\\Program.cs",
+              "RelativeToolTip": "..\\Client\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T16:05:37.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Client",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Client\\Client.csproj",
+              "RelativeDocumentMoniker": "..\\Client\\Client.csproj",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Client\\Client.csproj",
+              "RelativeToolTip": "..\\Client\\Client.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-30T16:04:24.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Okt2Service.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Server\\Services\\Okt2Service.cs",
+              "RelativeDocumentMoniker": "Services\\Okt2Service.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\okt2-2025\\Server\\Services\\Okt2Service.cs",
+              "RelativeToolTip": "Services\\Okt2Service.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-30T15:46:33.096Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\bin\Server.dll.config
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\bin\Server.dll
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\bin\Server.pdb
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\obj\Debug\Server.dll
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\wcf\Registracija Vozila\Server\obj\Debug\Server.pdb
