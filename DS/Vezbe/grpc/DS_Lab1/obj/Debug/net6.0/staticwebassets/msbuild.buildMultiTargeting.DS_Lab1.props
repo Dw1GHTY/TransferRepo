@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\DS_Lab1.props" />
-</Project>

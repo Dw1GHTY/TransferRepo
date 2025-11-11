@@ -1,3 +1,0 @@
-obj\Debug\net8.0\Protos/Messenger.cs \
-obj\Debug\net8.0\Protos/MessengerGrpc.cs: C:/Users/mihma/.nuget/packages/grpc.tools/2.57.0/build/native/include/google/protobuf/empty.proto\
- Protos/messenger.proto

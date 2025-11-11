@@ -1,7 +1,0 @@
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\bin\WcfService.dll.config
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\bin\WcfService.dll
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\bin\WcfService.pdb
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\obj\Debug\WcfService.csproj.AssemblyReference.cache
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\obj\Debug\WcfService.dll
-C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\WcfPractice\WcfService\obj\Debug\WcfService.pdb
