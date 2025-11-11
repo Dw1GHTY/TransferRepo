@@ -1,0 +1,4 @@
+Grpc:
+using var channel = GrpcChannel.ForAddress("https://localhost:5028");
+var client = new <ServisNamespace>.<NazivServisa>.<NazivServisa>Client(channel);
+

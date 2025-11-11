@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option csharp_namespace = "MessengerNamespace";
+
+import "google/protobuf/empty.proto";
+
+
+service MessengerService {
+	rpc addMessage(Message) returns (google.protobuf.Empty);
+	rpc deleteMessage(MessageId) returns (google.protobuf.Empty);
+	rpc listMessages(google.protobuf.Empty) returns (stream Message);
+}
+
+message Message {
+	int32 messageId = 1;
+	string messageContent = 2;
+}
+
+message MessageId {
+	int32 messageId = 1;
+}
+

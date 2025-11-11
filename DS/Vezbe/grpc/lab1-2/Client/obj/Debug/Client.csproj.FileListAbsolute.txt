@@ -1,0 +1,2 @@
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\grpc\lab1-2\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\Vezbe\grpc\lab1-2\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache

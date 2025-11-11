@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Lab1Namespace";
+
+
+service Lab1Service {
+	rpc proslediBroj(Broj) returns (google.protobuf.Empty);
+	rpc proslediTok(stream Broj) returns (stream Broj);
+}
+
+message Broj {
+	int32 vrednost = 1;
+}

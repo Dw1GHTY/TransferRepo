@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "M3YnDZ4jNhs=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\ListaPoruka\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mihma\\.nuget\\packages\\google.protobuf\\3.23.1\\google.protobuf.3.23.1.nupkg.sha512",
+    "C:\\Users\\mihma\\.nuget\\packages\\grpc.core.api\\2.57.0\\grpc.core.api.2.57.0.nupkg.sha512",
+    "C:\\Users\\mihma\\.nuget\\packages\\grpc.net.client\\2.57.0\\grpc.net.client.2.57.0.nupkg.sha512",
+    "C:\\Users\\mihma\\.nuget\\packages\\grpc.net.common\\2.57.0\\grpc.net.common.2.57.0.nupkg.sha512",
+    "C:\\Users\\mihma\\.nuget\\packages\\grpc.tools\\2.57.0\\grpc.tools.2.57.0.nupkg.sha512",
+    "C:\\Users\\mihma\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

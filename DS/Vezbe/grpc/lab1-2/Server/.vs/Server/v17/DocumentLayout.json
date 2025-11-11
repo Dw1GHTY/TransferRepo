@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\lab1-2\\Server\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{720B5609-0698-42EA-A990-FA94EA0609C0}|..\\Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\lab1-2\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\lab1-2\\Client\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Client\\Program.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\lab1-2\\Client\\Program.cs",
+              "RelativeToolTip": "..\\Client\\Program.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCgAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T15:56:10.533Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
