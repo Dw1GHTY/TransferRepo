@@ -1,0 +1,118 @@
+//IDL proizvoljni primer
+//========================IDL fajl, kalk.x================
+
+struct operandi{
+	int x,
+	int y
+}
+
+program KALKULATOR {	//ime programa
+
+	version KALKULATOR_VERSION { 	//ime verzije
+		
+		int pomnozi(operandi) = 1;
+		int kvadriraj(int x) = 2;
+	
+	
+	} = 1	//broj verzije
+
+} = 0x03ffffff	//broj programa na na osnovu koga se zna da je taj (kao id)
+
+//Kompajliranjem se dobija:
+
+rpcgen -C kalk.x
+
+->
+	kalk.h //header fajl
+	kalk.clnt.c //klijent stub
+	kalk.svc.c //server stub
+	
+//Klijent poziva program sa
+(imeprocedure_brojVerzije)
+-> 
+
+//==================Klijent========================
+
+#include <stdio.h>
+#include <rpc/rpc.h>
+#include <kalk.h>
+
+int main(int argc, char* argv[])
+{
+	CLIENT *clnt;	//RPC handler
+	char* server;
+	int *proizvod, *kvadrat;
+	operandi op;	//struktura definisana u IDL fajlu
+	
+	server = argv[1]
+	clnt = cln_create(server, KALKULATOR_VERSION, "udp")
+	
+	if(clnt == NULL) exit(2);
+	
+	op.x = atoi(argv[2]);
+	op.y = atoi(argv[3]);
+	
+	zbir = pomnozi_1(&op, clnt)
+	
+	if(zbir == (int* NULL)) exit(3);
+	
+	kvadrat = kvadriraj_1(2);
+	
+	if(kvadrat == (int* NULL)) exit(4);
+	
+	clnt_destroy(clnt);
+	exit(0);
+	
+}
+
+
+
+//==========Kako se linkuju klijent i server========
+primer.x
+
+rpcgen -C primer.x		(primer.h, primer_clnt.c, primer_svc.c)
+
+// kompajliranje klijenta(servera) i linkovanje sa klijent(server) stubom
+cc -o klijent klijent.c primer_clnt.c
+cc -o server server.c primer_svc.c
+
+
+
+//===========DCE RPC============
+
+//generisanje templejtskog fajla:
+uuidgen primer.idl
+-> primer.idl:
+
+[uuid(3d6ead56-06e3-11ca-8dd1-826901beabcd), version(1.0)]
+//uuid garantuje da ce biti jedinstven u celom DS
+interface INTERFACENAME 
+{
+		
+}
+
+//implementiranje svog servisa:
+[uuid(3d6ead56-06e3-11ca-8dd1-826901beabcd), version(1.0)]
+interface math 
+{
+		long mnozenje([in] long prviBroj, [in] long drugiBroj);
+}
+
+
+//sada se poziva IDL kompajler:
+idl primer.idl
+->
+primer.h	//header fajl
+primer_cstub.c	//klijent stub
+primer_sstub.c	//server stub
+
+//zatim se pise serverski i klijentski kod
+
+
+//da bi klijent pozvao server mora server da se registruje.
+
+//klijent pronalazi server u dva koraka:
+/*
+	-> lociranje serverske masine i
+	-> lociranje odgovarajuceg proces na serveru
+*/
