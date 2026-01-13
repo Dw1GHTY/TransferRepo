@@ -1,3 +1,7 @@
+
+
+Komunikacija DS
+
 //IDL proizvoljni primer
 //========================IDL fajl, kalk.x================
 
@@ -108,7 +112,6 @@ primer_sstub.c	//server stub
 
 //zatim se pise serverski i klijentski kod
 
-
 //da bi klijent pozvao server mora server da se registruje.
 
 //klijent pronalazi server u dva koraka:
@@ -116,3 +119,25 @@ primer_sstub.c	//server stub
 	-> lociranje serverske masine i
 	-> lociranje odgovarajuceg proces na serveru
 */
+
+- RMI
+
+
+Tipovi komunikacije
+	- Perzistentne
+		* poruka se pamti u serveru dok se ne dostavi sledecem
+	- Tranzijentne
+		* ako posiljalac i primalac ne rade poruka se odbacuje
+	- Sinhrone
+		- perzistentne - 
+		- tranzijentne
+	- Asinhrone
+		- perzistentne - 
+		- tranzijentne
+		
+	- MessageQueue
+		- Publisher Subscriber
+		
+		
+
+

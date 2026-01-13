@@ -1,0 +1,14 @@
+Heterogenost
+Skalabilnost
+Transparentnost
+	- lokacijska
+	- migraciona
+	- replikacije
+	- replikacije
+	- na otkaze
+	- paralelizacije
+	
+Otvorenost
+
+
+

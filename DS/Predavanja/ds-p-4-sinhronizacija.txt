@@ -1,0 +1,74 @@
+Sinhronizacija
+
+- Fizicki casovnici:
+
+	kvarcni kristal - oscilacija je metrika
+	atomski casovnik
+
+	- Algoritmi za sinhronizaciju:
+
+		* Kristijanov algoritam:
+			periodicno svaka masina pita timeServer (server tacnog vremena) za vreme
+			
+		* Berkeley algoritam:
+			obavlja prozivku svih masina periodicno (Time Daemon)
+			na osnovu dobijenih odgovora izracunava srednje vreme i sve obavestava
+		
+		* Network Time Protocol (NTP)
+			server vremena su organizovani u nivoe - stratume, pocevsi od 0
+			0 -> izvor tacnog vremena
+			1 -> serveri povezani sa atomskim casovnikom
+			2 -> serveri povezani sa serverima nivoa 1
+			i -> ostali serveri povezani medjusobno i sa i-1
+			
+			Rezimi:
+			- Simetrican rezim (najprecizniji rezim)
+			- klijent-server (RPC) rezim
+			- multicas rezim (u brzim LAN)
+	
+	
+- Logicki casovnici:
+
+	* Lamportov alogoritam:
+		
+		"desilo se pre":
+			A->B, A se desilo pre B - tranzitivna operacija:
+			a->b, b->c, tada vazi da se a->c
+			
+			ako su x i y dogadjaji u 2 procesa koji ne razmenjuju poruke,
+			tada x->y ili y->x ne vazi, a x i y su konkurentni dogadjaji
+			
+		algoritam funkcionise na onaj kul nacin sto svaki dogadjaj ima
+		vremensku markicu koja se inkrementira na svakom dogadjaju i slanju
+		i primanju poruke. Kada primi poruku sa markicom, uporedi lokalnu markicu
+		sa pristiglom i uzme vecu za aktuelnu. U prevodu:
+		
+		Svaka poruka nosi markicu izvornog casovnika
+		Kada poruka stigne proverava se:
+		
+		if lokalniSat < vremenskaMarkica then
+			postavi lokalniSat na (vremenskaMarkica + 1)
+		else nista
+		
+		problemi:
+			vise procesa treba da donese odluku na osnovu vremenskih
+			markica dva dogadjaja
+		resenje:
+			
+		Prosirene vremenske markice:
+		(Ti, i) < (Tj, j) akko Ti < Tj ili Ti = Tj i i < j
+			
+		
+	* Potpuno uredjena grupna komunikacija algoritam:
+		
+		Poruka se prosledjuje aplikaciji samo ako:
+			se nalazi na vrhu reda
+			potvrdjena je od strane svih procesa
+		
+		Pi salje ack za poruku koju je primio od Pj ako:
+			Pi nije posalo poruku azuriranja
+			Pi-ov identifikator je veci od identifikatora Pj-a
+			Pi-ov zahtev za azuriranjem je vec obradjen 
+		
+		
+	* Vektorski casovnici
