@@ -1,14 +1,53 @@
-Heterogenost
-Skalabilnost
-Transparentnost
-	- lokacijska
-	- migraciona
-	- replikacije
-	- replikacije
-	- na otkaze
-	- paralelizacije
+Osobine DS:
+	- Heterogenost
+	- Skalabilnost
+	- Transparentnost
+		- pristupna
+		- lokacijska
+		- migraciona
+		- konkurencije
+		- replikacije
+		- na otkaze
+		- paralelizacije
 	
-Otvorenost
+	- Otvorenost
 
 
 
+Tehnike skaliranja:
+	- Skrivanje kom. kasnjenja
+		* Asinhrone kom. umesto sinhronih
+		* Deo koda kod klijenta radi brzine
+	- Distribucija
+		Komponente na manje delove, delovi na vise masina
+	- Replikacija
+		
+
+Middleware:
+
+
+Tipovi DS:
+	- Distribuirani racunarski sistemi
+		* Klasteri
+			Middleware sadrži biblioteku
+			funkcija za izvršenje paralelnih
+			programa
+		* Grid
+			Grid je distribuirani računarski sistem čije
+			komponente mogu biti locirane na velikom
+			geografskom području
+	- Distribuirani informacioni sistemi
+		* Orijentisani ka poslovnim aplikacijama
+			- sistemi za obradu transakcija
+				ACID
+				Npr. podizanje novca putem platnih kartica ili
+				sistem za rezervaciju avio karata
+				tipicne komande za rad sa transakcijama:
+						Begin_transaction
+						End_transaction
+						Abort_transaction
+						Read
+						Write
+			- sistemi za integraciju poslovnih aplikacija
+	- Ugradjeni (sveprisutni) DS
+	

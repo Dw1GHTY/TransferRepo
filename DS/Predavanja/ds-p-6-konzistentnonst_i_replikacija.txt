@@ -1,0 +1,73 @@
+Konzistentnost i replikacija
+
+
+Razlozi repliakcije:
+	- Povecanje pouzdanosti
+	- Poboljsanje performansi
+
+Replikacija dovodi do problema konzistentnosti kopija
+Kada se azurira jedna stvar mora i svaka kopija
+
+Kopija je konzistentna ako vise read() operacija vraca isti rezultat
+
+ne moze se koristiti vreme za odrednicu sta je najnovija kopija podatka
+
+potrebni su MODELI KONZISTENCIJE:
+
+Wi(x)a - proces i write nad x, posle cega je x = a
+Ri(x)b - proces i read nad x, dobija vrednost b
+	
+	- Striktna
+	
+		najjaci model, implicira da postoji globalni casovnik
+		konzistencija je striktna ako bilo koja read() operacija vraca rezultat poslednje write() operacije
+		ako ima niz naredbi write(1) write(2), read(a) = 2 
+		ne moze se postici u DS
+		
+	- Sekvencijalna
+	
+		moze se ostvariti u DS
+		sekvencijalna konzistencija je postignuta ako se sve operacije iz svih procesa, sa stanovista skladista, izvrse u nekom
+		sekvencijalnom redosledu ali je i ispostovan redosled izvrsavanja u svim programima, u FIFO redosledu.
+		svi procesi mogu biti konkurentni ali vide sva desavanja u DS u nekom sekvencijalnom redosledu
+		
+		PREPLICES NAREDBE DOKLE GOD POSTUJU REDOSLED U KOME SU DEFINISANE UNUTAR SVOG PROCESA
+		
+		Predavanje Konzistentnost i repliakcija, slajd 12:
+			na slici pod a) je naursena striktna konzistencija jer ne bi mogli da procitaju jedno pa drugo, nego samo
+			poslednje upisano
+			
+			a jeste sekvencijalno zato sto je jedno pa drugo, nezavisno do redosleda, jer sve operacije mogu da se postave
+			u sekvencijalnom redosledu i da imaju smisla
+		 
+		implementira se lamportovim vremenskim markicama
+		
+	- Kauzalna
+	
+		Jos slabiji vid konzistencije od sekvencijalne
+		Svi slabiji modeli konzistencije su sadrzani u jacim
+	
+		upisi (write) koji su potencijalno uslovljeni moraju se videti u svim procesima u istom redosledu
+		konkurentni upisi se mogu videi u razlicitom redosledu u razlicitim procesima
+		
+		akcija koja povezuje druge 2 akcije, to se mora videti u celom sistemu, u prevodu,
+		ako bi vazilo W(x)a -> W(x)b zbog nekog R(x)a, onda ce u nekom skroz random procesu prvi read biti R(x)a a zatim R(x)b
+		
+		implementira se vektorskim markicama
+		
+	- Fifo
+		
+		Jos slabiji vid konzistencije od Kauzalne
+		Upisi koje obavi jedan proces se vide od strane drugih procesa po redosledu u kome su izdati - nema filozofije,
+		jer ako je proces P2 rekao W(x)b pa W(x)c, onda ce neki random proces da vidi bilo kada R(x)b pa R(x)c, bilo sta
+		izmedju njih, dokle god je ispostovan redosled definisan u P2.
+		
+		Sekvencijalna -> procesi na isti nacin vide dogadjaje
+		FIFO -> procesi mogu videti dogadjaje u razlicitom redosledu, osim onih koji poticu iz istog procesa
+		
+	!! najbitnije za razumevanje razlike izmedju Sekvencijalne i FIFO:
+		kod sekvencijalne svi procesi moraju da vide isti redosled i ne sme da se narusi redosled operacija pojedinacnih programa
+		kod FIFO svi procesi mogu videti razlicito dokle god se svaciji redosled operacija postuje.
+		
+		
+	- Slaba

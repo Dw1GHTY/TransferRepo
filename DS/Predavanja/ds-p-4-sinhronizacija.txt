@@ -24,7 +24,7 @@ Sinhronizacija
 			Rezimi:
 			- Simetrican rezim (najprecizniji rezim)
 			- klijent-server (RPC) rezim
-			- multicas rezim (u brzim LAN)
+			- multicas rezim (u brzim LAN mrezama)
 	
 	
 - Logicki casovnici:
@@ -72,3 +72,57 @@ Sinhronizacija
 		
 		
 	* Vektorski casovnici
+		problem sa lamportovim markicama -> ne moze se utvrditi da li su dva dogadjaja medjusobno uslovljena
+		vektorski casovnik ima N celobrojnih elemenata za N procesa
+		Ako ima 3 procesa, P1, P2 i P3, vektorski casovnik za P1 = [0, 0, 0]
+			kada primi uzme veci za taj indeks od koga je dobio
+			Ako je Vi < Vj => Vi se desilo pre Vj
+			Ako je Vi = Vj => konkurentni su
+			
+	
+
+- Sinhronizacija procesa: Uzajamno iskljucivanje
+
+Algoritmi uzajamnog iskljucivanja:
+
+	* Centralizovani
+		jedan proces koordinator
+		kada proces zeli da koristi nesto, salje zahtev koordinatoru, kada zavrsi salje zahtev za oslobadjanje
+		ako neki drugi proces napravi zahtev dok je zauzeto, on skladisti zahtev (FIFO red cekanja) i kada ovaj oslobodi
+		on obavesti tog drugog
+		
+	* Distirbuirani
+		koristi vremenske markice za sinhronizaciju pristupa
+		kreira poruku:
+			- identifikator (host_id, proces_id)
+			- ime resursa
+			- logicki casovnik
+		salje zahtev svim procesima u grupi i ceka na dozvolu, i zatim ulazi u KS
+		Ako prijemnik ne zeli da koristi, salje ACK, ako je u KS smesta zahtev u svoj bafer, a ako je i
+		prijemnik poslao zahtev, poredi markice, onaj sa manjom pobedjuje, ako izgubi salje ACK ako pobedi smesta zahtev u svoj bafer
+		a ako je bio u KS i zavrsi, svima koji su trazili salje ACK
+		
+	* Sa zetonima
+		proces komunicira sa logickim susjedom kompa
+		jedan proces moze biti vlasnik zetona
+		
+	* Algoritmi izbora
+		svaki proces ima identifikator
+		cilj je da se pronadje aktivni proces sa najvecim identifikatorom i proglasi za koordinatora
+		proces izbora je u dve faze, selekcija lidera sa najvecim brojem i obavestavanje svih procesa o pobedniku
+		
+		- Bully algoritam izbora:
+			proces Pi koji detektuje da koordinator ne odgovara startuje izbor
+			izborna poruka se salje svima sa vecim identifikatorom od Pi
+			ako niko ne odgovori kroz interval, Pi je lider
+			ako neko sa vecim odgovori, na njega se prenosi vodjenje izbora sve dok se ne dodje 
+			do procesa zbog cije vrednosti identifikatora niko nece njemu odgovoriti jer nema veci i onda ce taj
+			proces proglasiti pobedu.
+			
+		- Ring algoritam izbora
+			proces Pi detektuje da koordinator ne radi, salje izbornu poruku susedu. Ako na primer imamo procese 1,2...7
+			i proces 7 prestane da radi a proces 5 primeti, on procesu 6 salje izbornu poruku,
+			6 salje 7, ali on ne odgovara pa salje 1, 1 salje 2 itd do 5.
+			Proces 5 ce imati niz 5,6,0,1,2,3,4  i proglasice proces iz niza sa najvecim identifikatorom za koordinatora
+			
+		

@@ -1,0 +1,109 @@
+========== Konzistentnost sa stanovista klijenta (client centric):
+
+
+fokus na odrzavanje konzistentnosti  sa stanovista pojedinacnog klijentskog procesa.
+
+
+Oznake:
+xi[t] - označava verziju podatka x u lokalnoj kopiji Li u trenutku t
+WS xi[t] - označava skup write operacija na lokalnoj kopiji Li koje su dovele do verzije xi promenljive x (u trenutku t)
+ako se set operacija WS xi[t1] obavio i na lokalnoj kopiji Lj a zatim i novo ažuriranje na lokaciji Lj to se označava sa WS(xi[t1] , xj[t2])
+
+
+client-centric modeli konzistencije:
+
+	- Monotona čitanja (monotonic reads)
+		Ako proces pročita vrednost podatka x na jednoj lokaciji, 
+		svako novo čitanje tog podatka će vratiti istu ili noviju vrednost
+		bez obzira na kojoj lokaciji se obavlja čitanje. 
+	
+	- Monotoni upisi (monotonic writes)
+		Ako proces P obavlja modifikaciju (write) podatka x na lokaciji L1, 
+		proces P može obaviti modifikaciju podatka x na lokaciji L2 
+		tek nakon što se na toj lokaciji obavi ažuriranje sa lokacije L1. 
+
+		ili ovako:
+		Monotonic Writes je model koji garantuje da se upisi jednog klijenta uvek izvršavaju u onom redosledu u kojem su poslati, bez obzira na koju repliku klijent šalje te upise.
+	
+	- Citaj svoje upise (read your writes)
+		efekat write operacije koju obavlja proces P nad podatkom x će uvek biti viđen kasnijim čitanjem podataka x od strane istog procesa
+		ili:
+		ako je na lokaciji L1 upisano x1 a na L2 WS(x1, x2) i onda se procita ono sto je bilo azurirano i nova vrednost i to je READ YOUR WRITES
+	
+	- Upisi nakon čitanja (writes follow reads)
+		write operacija koju je obavio proces P nad podatkom x nakon prethodnog čitanja tog podatka se obavlja nad istom ili novijom vrednošću podatka x
+		
+		moze se implementirati lamportovim vremenskim markicama
+		
+		
+========== Replike i protokoli konzistencije
+
+
+
+Tri tipa replike:
+
+	- Permanentne
+		ima ih malo, prakticno pocetnii skup replika koje obrazuju distribuirano skladiste podataka
+		
+
+	- Replike inicirane od strane servera
+		zamisli aws ili gpc koji repliciraju fajlove blizu klijenata kojima su ti fajlovi potrebni. Odluka o tome gde ce se replicirati zavisi od:
+			broj obracanja fajlu i
+			odakle dolaze zahtevi
+
+	- Replike inicirane od strane klijenta
+		poznate pod nazivom klijent cache. Ovo vec znas
+
+
+
+
+
+
+========== Distribucija azuriranja
+
+Prosledjuju se 3 stvari:
+	- Obavestenje o obavljenom azuriranju
+	- Podaci koji su azurirani
+	- Operacije koje su izazvale azuriranje
+	
+	
+Taksonomija po inicijativi:
+
+	- Od strane servera (push prilaz)
+		
+		
+	- Na zahtev klijenta (pull prilaz)
+		git pull
+		
+		
+		
+========== Protokoli konzistencije
+
+Tri vrste:
+	- Protokoli zasnovani na postojanju primarne kopije (i backup kopija)
+		Write operacija se može izvršiti samo na primarnoj kopiji.
+			
+			* Remote write protokoli
+			
+			* Local write protokoli
+				Primarna kopija migrira između procesa koji žele da obave write operaciju
+				Kada proces želi da ažurira podatak X, on prvo locira primarnu kopiju X, a zatim je privlači u sopstvenu lokaciju.
+
+			
+	- Protokoli sa više ravnopravnih replika.
+		write operacija može biti inicirana u bilo kojoj replici.
+	
+	
+	- Keš koherentni protokoli
+		inicirani od strane klijenta, a ne servera 
+
+	- Replicirani write protokoli
+		write operacija se može obaviti na više replika, umesto na jednoj kao kod protokola zasnovanim na primarnim kopijama
+		
+		* Protokoli bazirani na kvorumu
+			Osnovna ideja je da klijenti zahtevaju i dobijaju dozvolu od više servera pre nego što obave čitanje/upis repliciranih podataka.
+			Da bi se fajl ažurirao klijent mora kontaktirati najmanje N/2+1 (većinu) servera i dobiti dozvolu
+
+			> Opštija šema (Giffordova) 
+			
+			
