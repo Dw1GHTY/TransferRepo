@@ -41,8 +41,11 @@ namespace Server
                 Sender = senderUsername
             };
 
-            IChatCallback receiver = this.users[toUser];
-            receiver.notifyReceiver(msg);
+            if (this.users.ContainsKey(toUser))
+            {
+                IChatCallback receiver = this.users[toUser];
+                receiver.notifyReceiver(msg);
+            }
 
         }
 

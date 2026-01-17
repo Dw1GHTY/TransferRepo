@@ -1,10 +1,6 @@
 ﻿using Client.ServiceReference1;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Client
 {
@@ -12,20 +8,59 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            IChatServiceCallback callback = new Callback();
-            InstanceContext context = new InstanceContext(callback);
-            ServiceReference1.ChatServiceClient client = new ServiceReference1.ChatServiceClient(context);
+            // 1. Inicijalizacija je bila dobra - prosleđujemo naš callback serveru
+            Callback callbackHandler = new Callback();
+            InstanceContext context = new InstanceContext(callbackHandler);
+            ChatServiceClient client = new ChatServiceClient(context);
+
+            Console.WriteLine("=== WCF CHAT CLIENT ===");
+            Console.Write("Enter your username: ");
+            string username = Console.ReadLine();
+
+            // Registracija na serveru
+            client.register(username);
+            Console.WriteLine($"Registered as {username}.");
+
+            while (true)
+            {
+                Console.WriteLine("\nOptions: [m] send message, [q] quit");
+                string command = Console.ReadLine()?.ToLower();
+
+                if (command == "q") break;
+                if (command == "m")
+                {
+                    sendMessage(client);
+                }
+            }
+
+            client.Close();
+        }
+
+        static void sendMessage(ChatServiceClient client)
+        {
+            Console.Write("To user: ");
+            string to = Console.ReadLine();
+            Console.Write("Message: ");
+            string text = Console.ReadLine();
+
+            // Pozivamo metodu servisa - server će sam prepoznati ko šalje
+            // na osnovu kanala koji je otvoren pri instanciranju klijenta
+            client.sendMessage(to, text);
+            Console.WriteLine("Message sent!");
         }
     }
 
-
-    public class Callback : ServiceReference1.IChatServiceCallback
+    // Implementacija callback interfejsa
+    public class Callback : IChatServiceCallback
     {
-        public void notifyReceiver(ChatMessage msg) 
+        public void CallbackNotifyReceiver(ChatMessage msg)
         {
-            Console.WriteLine(msg.Sender);
-            Console.WriteLine(msg.Content);
-            Console.WriteLine(msg.Timestamp.ToString());
+            // Ovo se izvršava asinhrono kada server "gurne" poruku klijentu
+            Console.WriteLine("\n------------------------------------");
+            Console.WriteLine($"NEW MESSAGE from: {msg.Sender}");
+            Console.WriteLine($"Content: {msg.Content}");
+            Console.WriteLine($"Sent at: {msg.Timestamp}");
+            Console.WriteLine("------------------------------------");
         }
     }
 }
