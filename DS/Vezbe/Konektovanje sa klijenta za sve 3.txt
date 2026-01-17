@@ -2,3 +2,12 @@ Grpc:
 using var channel = GrpcChannel.ForAddress("https://localhost:5028");
 var client = new <ServisNamespace>.<NazivServisa>.<NazivServisa>Client(channel);
 
+
+WCF:
+var callbackInstance = new InstanceContext(new ChatClientCallback());
+var factory = new DuplexChannelFactory<IChatService>(callbackInstance, "ChatEndpoint");
+IChatService proxy = factory.CreateChannel();
+
+
+RMI:
+supreme, lagano

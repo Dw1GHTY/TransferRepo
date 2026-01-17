@@ -1,0 +1,7 @@
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\bin\Server.dll.config
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\bin\Server.dll
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\bin\Server.pdb
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\obj\Debug\Server.dll
+C:\Users\marko\Desktop\TransferRepo\DS\Vezbe\wcf\april2025\Server\obj\Debug\Server.pdb

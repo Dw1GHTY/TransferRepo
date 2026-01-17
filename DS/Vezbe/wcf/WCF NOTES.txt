@@ -88,6 +88,18 @@ IChatService proxy = factory.CreateChannel();
 
 
 
+5. KonfiguracijaL
 
+- Server:
+ <services>
+      <service name="<Namespace>.<KlasaImplementator>">
+        <endpoint binding="<TipBindinga>" contract="<Namespace>.<InterfejsServisa>"/>
+      </service>
+    </services>
 
-
+- Klijent:
+<client>
+   <endpoint address="http://localhost:57724/<ImeServisa>.svc" binding="<TipBindinga>"
+    bindingConfiguration="binding1" contract="<Namespace>.<InterfejsServisa>"
+    name="<NazivBajndinga>" />
+ </client>
