@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{33C293F7-E514-40DE-B498-28CBC6FA68DA}|Server\\Server.csproj|C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{33C293F7-E514-40DE-B498-28CBC6FA68DA}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\chatfinal\\server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33C293F7-E514-40DE-B498-28CBC6FA68DA}|Server\\Server.csproj|solutionrelative:server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D483A16F-636F-42B0-B81C-4E5F89D427CE}|Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\chatfinal\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D483A16F-636F-42B0-B81C-4E5F89D427CE}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{33C293F7-E514-40DE-B498-28CBC6FA68DA}|Server\\Server.csproj|C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\server\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{33C293F7-E514-40DE-B498-28CBC6FA68DA}|Server\\Server.csproj|solutionrelative:server\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D483A16F-636F-42B0-B81C-4E5F89D427CE}|Client\\Client.csproj|C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D483A16F-636F-42B0-B81C-4E5F89D427CE}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,29 +26,27 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\Client\\Program.cs",
               "RelativeDocumentMoniker": "Client\\Program.cs",
               "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\Client\\Program.cs",
               "RelativeToolTip": "Client\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T13:08:54.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T13:08:54.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "IChatService.cs",
               "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\Server\\IChatService.cs",
               "RelativeDocumentMoniker": "Server\\IChatService.cs",
               "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\Server\\IChatService.cs",
               "RelativeToolTip": "Server\\IChatService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-17T12:15:57.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-17T12:15:57.229Z"
             },
             {
               "$type": "Document",
@@ -58,7 +56,7 @@
               "RelativeDocumentMoniker": "Server\\Service1.svc.cs",
               "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\ChatFinal\\Server\\Service1.svc.cs",
               "RelativeToolTip": "Server\\Service1.svc.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCsAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T12:15:53.359Z",
               "EditorCaption": ""
