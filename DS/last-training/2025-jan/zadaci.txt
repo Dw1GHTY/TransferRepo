@@ -1,0 +1,9 @@
+1. U .NET-u, koristeći gRPC, napisati servis sa procedurom kojoj se prosleđuje prirodan broj N. Procedura određuje sve elemente Fibonačijevog niza do N-tog elementa i vraća ih kao tok podataka klijentu.
+
+Definisati i proto fajl (jan.proto) koji daje specifikaciju servisa i poruka
+
+2. Korišćenjem Java RMI-a napisati serversku aplikaciju koja za prirodan broj N, prosleđen od strane klijenta, ima za cilj da generiše sve elemente Fibonačijevog niza do N-tog elementa, pri čemu svaki od elemenata vraća klijentu čim se element izgeneriše. Napisati klijentsku aplikaciju koja će minimalno demonstrirati funkcionisanje sistema.
+
+3. Datoteka input.dat sadrži ukupno 10MB podataka. Napisati MPI program koji vrši obradu ovih podataka i priprema ih za obradu, ujedno vršeći paralelni upis i čitanje datoteke. Na početku, svi procesi vrše čitanje iste količine podataka tako da poslednji proces čita prvi skup podataka, pretposlednji proces drugi skup itd, korišćenjem funkcija sa pojedinačnim pokazivačem. Pročitane podatke procesi upisuju u datoteku output.dat, tako što ih dele na četiri jednaka dela i upisuju po šemi prikazanoj na slici (za slučaj od 3 procesa) pri čemu je potrebno obratiti pažnju na paralelizaciju tog upisa.
+
+4. Koristeći WCF napisati čet aplikaciju. Svaki korisnik pri startovanju klijenta registruje svoj nadimak. Ukoliko se registruje isti nadimak, smatrati da je prethodna sesija prestala da važi. Klijent pod svojim nadimkom šalje poruku drugom klijentu tako što navede njegov nadimak. Prilikom dobijanja poruke od servisa prikazati sledeće parametre: ko je poslao, kad je poslata i sadržaj poruke. Obavezno napisati i odgovarajuće konfiguracije.

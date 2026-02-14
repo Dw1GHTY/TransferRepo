@@ -1,0 +1,15 @@
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\bin\Debug\net6.0\Client.exe
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\bin\Debug\net6.0\Client.deps.json
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\bin\Debug\net6.0\Client.runtimeconfig.json
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\bin\Debug\net6.0\Client.dll
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\bin\Debug\net6.0\Client.pdb
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.AssemblyInfoInputs.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.AssemblyInfo.cs
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.csproj.CoreCompileInputs.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.sourcelink.json
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.dll
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\refint\Client.dll
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.pdb
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\Client.genruntimeconfig.cache
+C:\Users\mihma\Desktop\TransferRepo\DS\last-training\2024-jun\Zadatak1\Client\obj\Debug\net6.0\ref\Client.dll
