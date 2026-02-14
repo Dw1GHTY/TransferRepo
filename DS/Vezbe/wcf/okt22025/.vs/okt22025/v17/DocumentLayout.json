@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|solutionrelative:server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2524B1FD-3CFB-483F-8F14-237197749B3B}|Client\\Client.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\okt22025\\client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2524B1FD-3CFB-483F-8F14-237197749B3B}|Client\\Client.csproj|solutionrelative:client\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\okt22025\\server\\ikalkulatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\server\\ikalkulatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|solutionrelative:server\\ikalkulatorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\okt22025\\server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|solutionrelative:server\\service1.svc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\wcf\\okt22025\\server\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0C094278-7572-4B7C-846D-4E6D2B77C3C4}|Server\\Server.csproj|solutionrelative:server\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\Web.config",
+              "RelativeDocumentMoniker": "Server\\Web.config",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\Web.config",
+              "RelativeToolTip": "Server\\Web.config",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-14T09:40:54.105Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Service1.svc.cs",
               "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\Service1.svc.cs",
               "RelativeDocumentMoniker": "Server\\Service1.svc.cs",
               "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\Service1.svc.cs",
               "RelativeToolTip": "Server\\Service1.svc.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwEIAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T15:41:13.471Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IKalkulatorService.cs",
               "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\IKalkulatorService.cs",
               "RelativeDocumentMoniker": "Server\\IKalkulatorService.cs",
               "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Server\\IKalkulatorService.cs",
               "RelativeToolTip": "Server\\IKalkulatorService.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwC8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-17T15:32:55.939Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\wcf\\okt22025\\Client\\Program.cs",
               "RelativeDocumentMoniker": "Client\\Program.cs",
