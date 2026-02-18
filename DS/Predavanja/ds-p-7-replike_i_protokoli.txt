@@ -23,7 +23,7 @@ client-centric modeli konzistencije:
 		tek nakon što se na toj lokaciji obavi ažuriranje sa lokacije L1. 
 
 		ili ovako:
-		Monotonic Writes je model koji garantuje da se upisi jednog klijenta uvek izvršavaju u onom redosledu u kojem su poslati, bez obzira na koju repliku klijent šalje te upise.
+		Monotonic Writes je model koji garantuje da se upisi jednog klijenta uvek izvršavaju u onom redosledu u kojem su poslati, bez obzira na koju repliku klijent šalje te 			upise.
 	
 	- Citaj svoje upise (read your writes)
 		efekat write operacije koju obavlja proces P nad podatkom x će uvek biti viđen kasnijim čitanjem podataka x od strane istog procesa

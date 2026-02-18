@@ -9,7 +9,7 @@ Implementirati gRPC server definisan u message.proto fajlu.
 
 2.	Korišćenjem Java RMI tehnologije napisati simulaciju MQTT brokera. 
 MQTT broker je server koji razmenjuje poruke izmedu klijenata korišćenjem topika. 
-Topik predstavlja string na osnovu koga se poruke (definisane naslovom i sadržajem) filtriraju i dostavljaju odredenim klijentima. 
+Topik predstavlja string na osnovu koga se poruke (definisane naslovom i sadržajem) filtriraju i dostavljaju odredjenim klijentima. 
 Neophodno je implementirati metodu subscribe kako bi se klijent pretplatio na poruke pristigle na odredeni topik, 
 kao i metodu publish koja omogućava korisniku da pošalje poruku na željeni topik. 
 Klijent ne kreira topik eksplicitno, već se topik. ukoliko ne postoji, kreira implicitno pozivom metode create Topic. 
