@@ -1,5 +1,6 @@
 VIII Semestar
  Obavezni predmeti:
+ 
  1. Paralelni sistemi
  Šifra predmeta: 2OER7O03
  Predmetni nastavnik: Emina Milovanović
@@ -12,6 +13,7 @@ VIII Semestar
  Sve: https://www.youtube.com/watch?v=44yBHDqrA2w&list=PLWLPHZCdUNsMOVb2-d4gavK7Riq-B--hE
  Predavanja: https://www.youtube.com/watch?v=44yBHDqrA2w&list=PLWLPHZCdUNsPuzw05l1FyGImbnJ-tjN-x
  Računske vežbe: https://www.youtube.com/watch?v=p2o9KansfTI&list=PLWLPHZCdUNsMNw4XL4yho7CT-byKNWD5l
+ 
  Izborni predmeti blok A:
  1. Multimedijalni sistemi
  Šifra predmeta: 2OER8A01
