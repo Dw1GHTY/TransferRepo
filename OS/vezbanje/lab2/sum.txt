@@ -1,0 +1,16 @@
+prva linija iz firs
+prva linia ja secon
+t.txt
+
+d.txt
+
+druga linija iz fir
+druga linia ja seco
+st.txt
+
+nd.txt
+
+treca linija iz fir
+treca linia ja seco
+st.txt
+nd.txt

@@ -1,0 +1,7 @@
+file.txt
+zadatak1
+zadatak1.c
+zadatak2
+zadatak2.c
+zadatak3
+zadatak3.c

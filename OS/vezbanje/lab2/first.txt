@@ -1,0 +1,3 @@
+prva linija iz first.txt
+druga linija iz first.txt
+treca linija iz first.txt

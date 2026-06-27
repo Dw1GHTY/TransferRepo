@@ -1,0 +1,3 @@
+prva linia ja second.txt
+druga linia ja second.txt
+treca linia ja second.txt
