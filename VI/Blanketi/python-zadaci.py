@@ -1,6 +1,7 @@
 from functools import *;
 import operator;
 from itertools import chain;
+
 """
 ### jun 2023
 (10 poena) Na programskom jeziku Python napisati funkciju maxTuple(lista1, lista2)
@@ -64,12 +65,70 @@ def rezultat(lista):
     print(naj)
     return naj
 
+""" 
+### sep 2023
+(10 poena) 
+Na programskom jeziku Python napisati funkciju qualify(results, Q, q) 
+koja vraća listu takmičara koji su se kvalifikovali 
+u sledeći krug takmičenja u trčanju na osnovu pravila i postignutih vremena.
+Lista results sadrži proizvoljan broj podlisti. 
+U svakoj podlisti su rezultati takmičara iz jedne od grupa koji nisu uređeni po vremenu.
+Rezultati takmičara se pamte kao uređeni par (broj takmičara, vreme u sekundama). 
+U sledeći krug takmičenja direktno se plasira po Q takmičara iz svake grupe sa najboljim vremenima,
+dok se od preostalih takmičara iz svih grupa plasira još q sa najboljim rezultatima.
+Smatrati da svaka grupa ima najmanje Q+q takmičara i da se vremena svih rezultata takmičara razlikuju.
+Zabranjeno je korišćenje petlji.
 
+Uređenje liste takmičara po vremenu moguće je obaviti pozivom funkcije:
+sort(results, key=lambda x: x[1])
+
+Primer: 
+qualify(
+[
+    [(1, 44.55), (2, 45.22), (3, 44.33), (4, 46.11)],   <-- grupa 1
+    [(5, 46.77), (6, 46.22), (7, 45.88), (8, 44.99)],   <-- grupa 2
+    [(9, 44.11), (10, 45.55), (11, 44.44), (12, 46.33)] <-- grupa 3
+],
+    2, 2
+)
+= [(3, 44.33), (1, 44.55), (8, 44.99), (7, 45.88), (9, 44.11), (11, 44.44), (2, 45.22), (10, 45.55)]
+"""
+def qualify(results, Q, q):
+    list(map(lambda g: list.sort(g, key=lambda x: x[1]), results))
+    
+    firstRound = list(chain(*list(map(lambda g: g[0:Q], results))))
+    preostali = list(chain(*list(map(lambda g: g[Q:], results))))
+    preostali_sorted = sorted(preostali, key=lambda x: x[1])
+    lastRound = preostali_sorted[0:q]
+    
+    print(firstRound + lastRound);
+    
+    return firstRound + lastRound
+    
+""" 
+(10 poena) Na programskom jeziku Python napisati funkciju prosek(temp) koja određuje prosečnu temperaturu za mesec, 
+čiji se podaci o temperaturama po danima šalju kao parametar funkcije. 
+Temperature sadrže podliste koje se sastoje od neodređenog broja merenja za svaki dan u toku meseca. 
+Termometar povremeno vraća pogrešne vrednosti, 
+pa je prvo potrebno za svaki dan odrediti medijalnu vrednost, 
+a zatim upotrebiti tako dobijene vrednosti za svaki dan i izračunati prosečnu vrednost temperature za ceo mesec.
+
+Medijalna vrednost je broj koji razdvaja donju i gornju polovinu sortiranog uzorka, 
+a u slučaju da se radi o nizu sa parnim brojem elemenata,
+za medijalnu vrednost se uzima aritmetička sredina 2 vrednosti koje su kandidati za medijanu.
+Zabranjeno je korišćenje petlji (osim u comprehension sintaksi).
+
+Primer: prosek([[8, -15, 4, 9], [3, 2, 33], [2, 4, 4], [8, 2, 12], [3, 5, 1, 15]]) = 5
+"""
+    
+    
 def main():
     print("============ START ============");
     # maxTuple([[1, 2], [3, 4], [5, 6]], [[7, 0], [5, 8], [9, 3]])
     # uredi("1536");
-    rezultat([[(60, 50), (88, 76), (85, 97)], [(60, 68), (68, 70), (85, 85)], [(60, 55), (88, 74), (85, 89)]]);
-
+    # rezultat([[(60, 50), (88, 76), (85, 97)], [(60, 68), (68, 70), (85, 85)], [(60, 55), (88, 74), (85, 89)]]);
+    # test();
+    # qualify([[(1, 44.55), (2, 45.22), (3, 44.33), (4, 46.11)],[(5, 46.77), (6, 46.22), (7, 45.88), (8, 44.99)],[(9, 44.11), (10, 45.55), (11, 44.44), (12, 46.33)]],2, 2);
+    prosek([[8, -15, 4, 9], [3, 2, 33], [2, 4, 4], [8, 2, 12], [3, 5, 1, 15]]);
 if __name__ == "__main__":
     main();
