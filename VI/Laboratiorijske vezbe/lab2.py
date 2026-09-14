@@ -112,16 +112,28 @@ def izracunaj(lista):
 
 #region Zadatak 13
 def skupi(lista):
-    print();
+    print("Ulaz: ", lista)
 #endregion
 
 #region Zadatak 14
+def suma(lista):
+    rez = reduce(operator.add,[reduce(operator.mul, x, 1) for x in lista], 0);
+    
+    print(rez);
 #endregion
 
 #region Zadatak 15
+def promeni(lista, x):
+    rez = [((br-x) if br>=x else (br+x)) for br in lista]
+    print(rez);
 #endregion
 
 #region Zadatak 16
+# broj("#FA0EA0") R:FA G:0E B:A0
+def broj(rgbBroj):
+    print(rgbBroj);
+    hexBoja = rgbBroj.lstrip("#")
+    print(int(rgbBroj[0:2], 10), int(rgbBroj[2:4], 10), int(rgbBroj[4:6], 10))
 #endregion
 
 #region Zadatak 17
@@ -161,6 +173,9 @@ def main():
     # stepen([1, 5, 2, 6, 1, 6, 3, 2, 9]);
     # proizvod([[1, 3, 5], [2, 4, 6], [1, 2, 3]])
     # izracunaj([2, 4, [1, 2, 3], [4, 2], 2, [9, 5]])
-    skupi([[1, 3, 5], [2, 4, 6], [1, 2]])
+    # skupi([[1, 3, 5], [2, 4, 6], [1, 2]]) NEURADNJENO
+    # suma([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    # promeni([7, 1, 3, 5, 6, 2], 3)
+    broj("#FA0EA0")
 if __name__ == "__main__":
     main();
