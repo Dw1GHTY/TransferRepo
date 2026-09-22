@@ -120,7 +120,82 @@ Zabranjeno je korišćenje petlji (osim u comprehension sintaksi).
 
 Primer: prosek([[8, -15, 4, 9], [3, 2, 33], [2, 4, 4], [8, 2, 12], [3, 5, 1, 15]]) = 5
 """
+def prosek(lista):
+     print();
+     
+     
+""" 
+(10 poena) Takmičenje timova u fudbalu je organizovano u dve faze, 
+grupnoj i eliminacionoj. Na takmičenju učestvuje n timova koji su u grupnoj fazi podeljeni u k grupa.
+U eliminacionu fazu prolazi ukupno m timova. 
+Iz svake grupe direktno prolazi prvih p timova i još q (q<k) najbolje plasiranih timova 
+iz svih grupa koji su zauzeli p+1 mesto u grupi (m=p·k+q).
+Plasman tima u grupi se određuje na osnovu broja osvojenih bodova i gol razlike.
+Na programskom jeziku Python napisati funkciju prolazak(rez, n, k, m, p, q)
+koja određuje spisak timova koji su pošli u drugu fazu takmičenja
+na osnovu rezultata iz grupne faze (rez).
+
+Parametar rez predstavlja listu uređenih četvorki oblika (tim, grupa, broj bodova, gol razlika).
+Smatrati da su parametri funkcije takvi da uvek postoji jedinstveno rešenje.
+
+prolazak
+([
+    ("T1", 1, 3, 1), ("T2", 3, 7, 4), ("T3", 2, 6, 1), 
+    ("T4", 2, 3, 0), ("T5", 3, 5, 2), ("T6", 1, 4, 1),
+    ("T7", 1, 4, 2), ("T8", 1, 6, 3), ("T9", 2, 9, 7),
+    ("T10", 3, 1, -2), ("T11", 3, 3, -1), ("T12", 2, 0, -4)], 12, 3, 8, 3, 2)
+=> ["T8", "T7", "T9", "T3", "T2", "T5", "T6", "T1"]
+"""
+""" 
+rez - rezultati
+n - broj timova
+k - broj grupa
+m - metrika za koliko jos se plasira
+p - broj koji prolazi po grupi
+q - jos ovoliko najbolje plasiranih
+"""
+def prolazak(rez, n, k, m, p, q):
+    print(rez);
+     
     
+""" 
+(10 poena) Na programskom jeziku Python napisati funkciju prebroji(text, limit)
+koja vraća listu karaktera koji se u zadatom string-u 
+javljaju više od zadatog broja puta. 
+String se prosleđuje parametrom text, 
+dok se broj ponavljanja koji treba prekoračiti prosleđuje parametrom limit.
+Zabranjeno je korišćenje petlji (osim u comprehension sintaksi).
+
+Primeri: prebroji("aabcdd", 1) = ["a", "d"]
+prebroji("abacaddda", 3) = ["a"]
+"""
+# def prebroji(text, limit):
+#     nadjeni = {}; # karakter : brPonavljanja
+#     list( if x not in for x in text)
+#     print(rez);
+    
+    
+""" 
+januar 2026
+"""    
+def prebroji(text, limit):
+    rez = list(set(list(filter(lambda x: text.count(x) > limit, text))));
+    print(rez);
+    
+""" 
+2026 apr
+"""
+# prosecna temp jednog dana = (dan[1] + dan[2])/2
+# a svih dana zajedno je suma prosecnih temp / brojem dana
+def medianTemp(temp1, temp2):
+    return (temp1 + temp2) / 2;
+def najstabilniji_dan(podaci):
+    prosecnaTemp = reduce(lambda x, y: x + medianTemp(y[1], y[2]), podaci, 0) / len(podaci);
+    print(rez);
+    
+    
+""" 2025 okt """
+
     
 def main():
     print("============ START ============");
@@ -129,6 +204,11 @@ def main():
     # rezultat([[(60, 50), (88, 76), (85, 97)], [(60, 68), (68, 70), (85, 85)], [(60, 55), (88, 74), (85, 89)]]);
     # test();
     # qualify([[(1, 44.55), (2, 45.22), (3, 44.33), (4, 46.11)],[(5, 46.77), (6, 46.22), (7, 45.88), (8, 44.99)],[(9, 44.11), (10, 45.55), (11, 44.44), (12, 46.33)]],2, 2);
-    prosek([[8, -15, 4, 9], [3, 2, 33], [2, 4, 4], [8, 2, 12], [3, 5, 1, 15]]);
+    # prosek([[8, -15, 4, 9], [3, 2, 33], [2, 4, 4], [8, 2, 12], [3, 5, 1, 15]]);
+    # prolazak([("T1", 1, 3, 1), ("T2", 3, 7, 4), ("T3", 2, 6, 1), ("T4", 2, 3, 0), ("T5", 3, 5, 2), ("T6", 1, 4, 1),("T7", 1, 4, 2), ("T8", 1, 6, 3), ("T9", 2, 9, 7),
+    # ("T10", 3, 1, -2), ("T11", 3, 3, -1), ("T12", 2, 0, -4)], 12, 3, 8, 3, 2);
+    # prebroji("aabcdd", 1);
+    # prebroji('aabcddffff', 1);
+    najstabilniji_dan([("Ponedeljak", 10, 20), ("Utorak", 12, 18), ("Sreda", 15, 26), ("Cetvrtak", 14, 19), ("Petak", 13, 17)]);
 if __name__ == "__main__":
     main();
