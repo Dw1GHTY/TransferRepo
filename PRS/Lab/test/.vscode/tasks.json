@@ -1,19 +1,34 @@
 {
   "version": "2.0.0",
+  "options": {
+    "env": { "PATH": "/usr/lib64/openmpi/bin:${env:PATH}" }
+  },
   "tasks": [
     {
       "label": "MPI: build",
       "type": "shell",
-      "command": "/usr/lib64/openmpi/bin/mpicc",
-      "args": ["-Wall", "-g", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}", "-lm"],
+      "command": "mpicc",
+      "args": [
+        "-Wall",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}",
+        "-lm"
+      ],
       "group": { "kind": "build", "isDefault": true },
       "problemMatcher": ["$gcc"]
     },
     {
       "label": "MPI: run",
       "type": "shell",
-      "command": "/usr/lib64/openmpi/bin/mpirun",
-      "args": ["--oversubscribe", "-np", "${input:np}", "${fileDirname}/${fileBasenameNoExtension}"],
+      "command": "mpirun",
+      "args": [
+        "--oversubscribe",
+        "-np",
+        "${input:np}",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
       "dependsOn": "MPI: build",
       "group": "test",
       "problemMatcher": []

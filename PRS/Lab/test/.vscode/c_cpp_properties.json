@@ -4,9 +4,10 @@
       "name": "Linux-MPI",
       "includePath": [
         "${workspaceFolder}/**",
-        "/usr/include/openmpi-x86_64"
+        "/usr/include/openmpi-x86_64",
+        "/usr/lib/x86_64-linux-gnu/openmpi/include"
       ],
-      "compilerPath": "/usr/lib64/openmpi/bin/mpicc",
+      "compilerPath": "/usr/bin/gcc",
       "cStandard": "c17",
       "intelliSenseMode": "linux-gcc-x64"
     }
