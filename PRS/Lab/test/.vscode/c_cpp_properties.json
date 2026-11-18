@@ -1,17 +1,15 @@
 {
-    "configurations": [
-        {
-            "name": "Linux",
-            "includePath": [
-                "${workspaceFolder}/**",
-                "/usr/include/openmpi-x86_64/"
-            ],
-            "defines": [],
-            "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "linux-gcc-x64"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "Linux-MPI",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/include/openmpi-x86_64"
+      ],
+      "compilerPath": "/usr/lib64/openmpi/bin/mpicc",
+      "cStandard": "c17",
+      "intelliSenseMode": "linux-gcc-x64"
+    }
+  ],
+  "version": 4
 }

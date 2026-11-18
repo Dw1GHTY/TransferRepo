@@ -1,3 +1,5 @@
+# MPI - Message Passing Interface
+
 - Komunikator je skup od vise procesa koji imaju rank (int vrednost od 0 do br_procesa - 1)
 - Rang svakog procesa je njegov identifikator u okviru komunikatora
 - MPI_COMM_WORLD je out-of-the-box globalni komunikator kome pripadaju svi procesi, makar bili u nekom
