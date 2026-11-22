@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "LogServiceGrpc";
+
+package logservice;
+
+
+enum Severity {
+	INFO = 0;
+	WARNING = 1;
+	ERROR = 2;
+}
+
+message LogMessage {
+	string content = 1;
+	string priority = 2;
+}
+
+message LogSummary {
+	int32 info_count = 1;
+	int32 warning_count = 2;
+	int32 error_count = 3;
+}
+
+service LogService {
+	rpc SendLogs(stream LogMessage) returns (LogSummary);
+}

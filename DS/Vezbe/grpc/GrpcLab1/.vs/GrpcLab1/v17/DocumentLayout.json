@@ -1,13 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\",
+  "WorkspaceRootPath": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\marko\\desktop\\transferrepo\\ds\\grpc\\grpclab1\\klijent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\server\\protos\\jun2.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|solutionrelative:server\\protos\\jun2.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\server\\protos\\korisnik.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|solutionrelative:server\\protos\\korisnik.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\server\\services\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|solutionrelative:server\\services\\korisnikservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\server\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|solutionrelative:server\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\klijent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|solutionrelative:klijent\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\marko\\desktop\\transferrepo\\ds\\grpc\\grpclab1\\klijent\\klijent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5D03C38-22E4-4216-971D-AA39A78F2042}|Server\\Server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|c:\\users\\mihma\\desktop\\transferrepo\\ds\\vezbe\\grpc\\grpclab1\\klijent\\klijent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0B3A603B-1477-4410-AA38-A55DA353A7AF}|Klijent\\Klijent.csproj|solutionrelative:klijent\\klijent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -23,23 +43,88 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "jun2.proto",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Protos\\jun2.proto",
+              "RelativeDocumentMoniker": "Server\\Protos\\jun2.proto",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Protos\\jun2.proto",
+              "RelativeToolTip": "Server\\Protos\\jun2.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2026-11-02T19:16:27.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "korisnik.proto",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Protos\\korisnik.proto",
+              "RelativeDocumentMoniker": "Server\\Protos\\korisnik.proto",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Protos\\korisnik.proto",
+              "RelativeToolTip": "Server\\Protos\\korisnik.proto",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2026-11-02T19:01:31.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "Server\\Services\\DatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T19:05:05.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "KorisnikService.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Services\\KorisnikService.cs",
+              "RelativeDocumentMoniker": "Server\\Services\\KorisnikService.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Services\\KorisnikService.cs",
+              "RelativeToolTip": "Server\\Services\\KorisnikService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T19:04:25.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Program.cs",
+              "RelativeDocumentMoniker": "Server\\Program.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Server\\Program.cs",
+              "RelativeToolTip": "Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T18:59:54.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Klijent\\Program.cs",
               "RelativeDocumentMoniker": "Klijent\\Program.cs",
-              "ToolTip": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Program.cs",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Klijent\\Program.cs",
               "RelativeToolTip": "Klijent\\Program.cs",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAqwLkAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-23T18:27:02.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Klijent",
-              "DocumentMoniker": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
+              "DocumentIndex": 6,
+              "Title": "Klijent.csproj",
+              "DocumentMoniker": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
               "RelativeDocumentMoniker": "Klijent\\Klijent.csproj",
-              "ToolTip": "C:\\Users\\marko\\Desktop\\TransferRepo\\DS\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
+              "ToolTip": "C:\\Users\\mihma\\Desktop\\TransferRepo\\DS\\Vezbe\\grpc\\GrpcLab1\\Klijent\\Klijent.csproj",
               "RelativeToolTip": "Klijent\\Klijent.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",

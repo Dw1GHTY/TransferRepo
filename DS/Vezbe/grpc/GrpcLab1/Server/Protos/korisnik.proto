@@ -13,7 +13,11 @@ service KorisnikServis {
 	rpc UpdateKorisnik(Korisnik) returns (Korisnik);
 	rpc GetKorisnik(Id) returns (Korisnik);
 	rpc GetKorisniciFromTo(FromTo) returns (stream Korisnik);
-	rpc DeleteKorisnici(stream Id) returns (stream Korisnik);
+	rpc DeleteKorisnici(stream Id) returns (stream Message);
+}
+
+message Message {
+	string sadr = 1;
 }
 
 message Korisnik {
